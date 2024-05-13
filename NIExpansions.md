@@ -123,7 +123,7 @@
 [AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/halcyon-sky/)
 
 | Version | Description Text | Components |
-| :-----: | :--------------- | :---------: |
+| :-----: | :--------------- | :--------: |
 | 2.0.1 - 2018-02-19 | 52 MASCHINE and 63 BATTERY Kits packed with samples of overdriven drums, processed instruments, and crushing synths - 37 MASSIVE Presets. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
 
 </details>
