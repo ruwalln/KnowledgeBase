@@ -111,6 +111,6 @@
 
 | Version | Description Text | Components |
 | :-----: | :--------------- | :---------: |
-| 2.0.1 - 2018-02-19 | 48 MASCHINE and 52 BATTERY Kits loaded with FX, EQ, and unique patterns - 20 MASSIVE and 20 MONARK presets for deep, smooth bass sounds. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
+| 2.0.1 - 2018-02-19 | 52 MASCHINE and 63 BATTERY Kits packed with samples of overdriven drums, processed instruments, and crushing synths - 37 MASSIVE Presets. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
 
 </details>
