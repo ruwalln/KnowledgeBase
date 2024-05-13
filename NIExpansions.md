@@ -2,7 +2,7 @@
 
 <details>
 
-<summary>Astral Flutter v2.0.0 - 807MB </summary>
+<summary>Astral Flutter v2.0.0 - 807 MB </summary>
 
 [AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/astral-flutter/)
 
@@ -14,7 +14,7 @@
 
 <details>
 
-<summary>Byte Riot v2.0.0 - 428MB </summary>
+<summary>Byte Riot v2.0.0 - 428 MB </summary>
 
 [AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/byte-riot/)
 
@@ -40,7 +40,7 @@
 
 <details>
 
-<summary>Cavern Floor v2.0.0 - 900MB </summary>
+<summary>Cavern Floor v2.0.0 - 900 MB </summary>
 
 [AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/cavern-floor/)
 
@@ -53,9 +53,22 @@
 
 <details>
 
-<summary>Decoded Forms v2.0.1 - 608MB </summary>
+<summary>Decoded Forms v2.0.1 - 608 MB </summary>
 
 [AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/decoded-forms/)
+
+| Version | Description Text | Components |
+| :-----: | :--------------- | :---------: |
+| 2.0.1 - 2018-02-19 | 42 deconstructed, dissected, and dismantled Kits for MASCHINE and BATTERY - Exclusive MASSIVE and MONARK presets designed for rich, melodic bass. Includes also Audio Loops exported from Maschine. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
+
+</details>
+
+
+<details>
+
+<summary>Deep Matter v2.0.1 - 1.63 GB </summary>
+
+[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/deep-matter/)
 
 | Version | Description Text | Components |
 | :-----: | :--------------- | :---------: |
