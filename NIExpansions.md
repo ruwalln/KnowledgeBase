@@ -2,7 +2,7 @@
 
 <details>
 
-<summary>Astral Flutter v2.0.0</summary>
+<summary>Astral Flutter v2.0.0 size 807MB </summary>
 
 [AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/astral-flutter/)
 
