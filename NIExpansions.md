@@ -72,6 +72,6 @@
 
 | Version | Description Text | Components |
 | :-----: | :--------------- | :---------: |
-| 2.0.1 - 2018-02-19 | 42 deconstructed, dissected, and dismantled Kits for MASCHINE and BATTERY - Exclusive MASSIVE and MONARK presets designed for rich, melodic bass. Includes also Audio Loops exported from Maschine. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
+| 2.0.1 - 2018-02-19 | 48 MASCHINE Kits and 52 BATTERY Kits with found sound percussion and atmospheric field recordings - Includes 10 MASSIVE and 15 MONARK presets for perfect-sounding bass, chords, and leads. Includes also Audio Loops exported from Maschine. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
 
 </details>
