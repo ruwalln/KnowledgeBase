@@ -75,3 +75,16 @@
 | 2.0.1 - 2018-02-19 | 48 MASCHINE Kits and 52 BATTERY Kits with found sound percussion and atmospheric field recordings - Includes 10 MASSIVE and 15 MONARK presets for perfect-sounding bass, chords, and leads. Includes also Audio Loops exported from Maschine. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
 
 </details>
+
+
+<details>
+
+<summary>Drop Squad v2.0.1 - 1.12 GB </summary>
+
+[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/drop-squad/)
+
+| Version | Description Text | Components |
+| :-----: | :--------------- | :---------: |
+| 2.0.1 - 2018-02-19 | 45 MASCHINE and 52 BATTERY Kits for expanding your sonic arsenal - Custom MASSIVE presets for maximum impact. Includes also Audio Loops exported from Maschine. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
+
+</details>
