@@ -49,3 +49,16 @@
 | 2.0.0 - 2018-02-19 | 45 MASCHINE and 54 BATTERY Kits - Customizable presets for MASSIVE and MONARK by top sound designers give you the perfect sounds for your genre. Includes also Audio Loops exported from Maschine. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
 
 </details>
+
+
+<details>
+
+<summary>Decoded Forms v2.0.1 - 608MB </summary>
+
+[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/decoded-forms/)
+
+| Version | Description Text | Components |
+| :-----: | :--------------- | :---------: |
+| 2.0.0 - 2018-02-19 | 45 MASCHINE and 54 BATTERY Kits - Customizable presets for MASSIVE and MONARK by top sound designers give you the perfect sounds for your genre. Includes also Audio Loops exported from Maschine. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
+
+</details>
