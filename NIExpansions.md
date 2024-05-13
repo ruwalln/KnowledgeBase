@@ -4,7 +4,7 @@
 
 <summary>Astral Flutter v2.0.0</summary>
 
-[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/astral-flutter/#:~:text=Learn%20more.-,ASTRAL%20FLUTTER%20Demo%20Tracks,-%2D%20Chlorox)
+[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/astral-flutter/)
 
 | Version | Description Text | Components |
 | :-----: | :--------------- | :---------: |
@@ -16,7 +16,7 @@
 
 <summary>Byte Riot v2.0.0</summary>
 
-[AudioDemo](https://www.native-instruments.com/fileadmin/ni_media/maschine/maschineexpansions/byte_riot/audio/1._Contra_Man.mp3)
+[AudioDemo]()
 
 | Version | Description Text | Components |
 | :-----: | :--------------- | :---------: |
