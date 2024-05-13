@@ -118,7 +118,7 @@
 
 <details>
 
-<summary>GHalicon Sky v2.0.1 - 1.25 GB </summary>
+<summary>Halicon Sky v2.0.1 - 1.25 GB </summary>
 
 [AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/halcyon-sky/)
 
