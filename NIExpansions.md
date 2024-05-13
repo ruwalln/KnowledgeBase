@@ -2,7 +2,7 @@
 
 <details>
 
-<summary>Astral Flutter v2.0.0 size 807MB </summary>
+<summary>Astral Flutter v2.0.0 - 807MB </summary>
 
 [AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/astral-flutter/)
 
@@ -14,7 +14,7 @@
 
 <details>
 
-<summary>Byte Riot v2.0.0</summary>
+<summary>Byte Riot v2.0.0 - 428MB </summary>
 
 [AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/byte-riot/)
 
@@ -27,7 +27,7 @@
 
 <details>
 
-<summary>CARIBBEAN CURRENT v2.0.0</summary>
+<summary>CARIBBEAN CURRENT v2.0.0 - 585MB </summary>
 
 [AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/caribbean-current/)
 
