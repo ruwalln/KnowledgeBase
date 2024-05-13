@@ -2,7 +2,9 @@
 
 <details>
 
-<summary>Astral Flutter v2.0.0 - URL : [AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/astral-flutter/#:~:text=out%20melodic%20chords-,ASTRAL%20FLUTTER%20Demo%20Tracks,-ASTRAL%20FLUTTER)</summary>
+<summary>Astral Flutter v2.0.0</summary>
+
+[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/astral-flutter/#:~:text=Learn%20more.-,ASTRAL%20FLUTTER%20Demo%20Tracks,-%2D%20Chlorox)
 
 | Version | Description Text | Components |
 | :-----: | :--------------- | :---------: |
