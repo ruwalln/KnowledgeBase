@@ -60,7 +60,5 @@
 | Version | Description Text | Components |
 | :-----: | :--------------- | :---------: |
 | 2.0.1 - 2018-02-19 | 42 deconstructed, dissected, and dismantled Kits for MASCHINE and BATTERY - Exclusive MASSIVE and MONARK presets designed for rich, melodic bass. Includes also Audio Loops exported from Maschine. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
-| updated version | SPACE AND SOUL
-DECODED FORMS blazes with disruptive bass and crisp drums. At its core are four iconic drum breaks from the 70s, chosen for their contextual versatility. Each one was meticulously recorded to capture the flavor and sonic character of the original. After extending the loops with improvised phrases, kits were created with each sound deconstructed, dissected, and dismantled into mix-and-match pieces. Additionally, spacey pads and warm chords give the expansion lush, atmospheric texture. | -- |
 
 </details>
