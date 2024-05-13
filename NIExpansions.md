@@ -16,7 +16,7 @@
 
 <summary>Byte Riot v2.0.0</summary>
 
-[AudioDemo]()
+[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/byte-riot/)
 
 | Version | Description Text | Components |
 | :-----: | :--------------- | :---------: |
@@ -25,4 +25,14 @@
 </details>
 
 
+<details>
 
+<summary>CARIBBEAN CURRENT v2.0.0</summary>
+
+[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/caribbean-current/)
+
+| Version | Description Text | Components |
+| :-----: | :--------------- | :---------: |
+| 2.0.0 - 2018-02-19 | 40 MASCHINE and 47 BATTERY Kits - 40 MASSIVE presets by top sound designers give you the perfect sounds for your genre.. Includes also Audio Loops exported from Maschine. | Maschine 2.7.2 , Battery 4.1, Massive Synth |
+
+</details>
