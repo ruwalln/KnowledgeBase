@@ -127,3 +127,16 @@
 | 2.0.1 - 2018-02-19 | 50 MASCHINE and 55 BATTERY Kits brimming with futuristic downbeat sounds - Exclusive instrument and effect presets for REAKTOR PRISM and MASSIVE. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
 
 </details>
+
+
+<details>
+
+<summary>Lazor Dice v2.0.1 - 1.01 GB </summary>
+
+[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/lazer-dice/)
+
+| Version | Description Text | Components |
+| :-----: | :--------------- | :--------: |
+| 2.0.1 - 2018-02-19 | 49 MASCHINE and 54 BATTERY Kits for fresh creative spark - Customizable presets for MASSIVE by top sound designers give you the perfect sounds for your genre. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
+
+</details>
