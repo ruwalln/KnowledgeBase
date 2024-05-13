@@ -105,9 +105,9 @@
 
 <details>
 
-<summary>Elastic Thump v2.0.1 - 750 MB </summary>
+<summary>Golden Kingdom v2.0.1 - 1.7 GB </summary>
 
-[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/elastic-thump/)
+[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/golden-kingdom/)
 
 | Version | Description Text | Components |
 | :-----: | :--------------- | :---------: |
