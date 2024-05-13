@@ -124,6 +124,6 @@
 
 | Version | Description Text | Components |
 | :-----: | :--------------- | :--------: |
-| 2.0.1 - 2018-02-19 | 52 MASCHINE and 63 BATTERY Kits packed with samples of overdriven drums, processed instruments, and crushing synths - 37 MASSIVE Presets. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
+| 2.0.1 - 2018-02-19 | 50 MASCHINE and 55 BATTERY Kits brimming with futuristic downbeat sounds - Exclusive instrument and effect presets for REAKTOR PRISM and MASSIVE. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
 
 </details>
