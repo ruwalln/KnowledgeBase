@@ -88,3 +88,16 @@
 | 2.0.1 - 2018-02-19 | 45 MASCHINE and 52 BATTERY Kits for expanding your sonic arsenal - Custom MASSIVE presets for maximum impact. Includes also Audio Loops exported from Maschine. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
 
 </details>
+
+
+<details>
+
+<summary>Elastic Thump v2.0.1 - 750 MB </summary>
+
+[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/elastic-thump/)
+
+| Version | Description Text | Components |
+| :-----: | :--------------- | :---------: |
+| 2.0.1 - 2018-02-19 | 48 MASCHINE and 52 BATTERY Kits loaded with FX, EQ, and unique patterns - 20 MASSIVE and 20 MONARK presets for deep, smooth bass sounds. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
+
+</details>
