@@ -280,3 +280,4 @@
 | MASCHINE EXCLUSIVE | MASCHINE owners get editable patterns for building ideas fast. Plus, multi-effects macros that are custom-made for your sounds. | 7 Projects, 215 Patterns |
 
 </details>
+
