@@ -145,10 +145,11 @@
 <details>
 
 <summary>London Grid v2.0.1 - 691 MB </summary>
-
-[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/london-grit/)
+.
 
 - Drum Sample Breakdown: 97 Kicks, 69 Snares, 40 Claps, 18 Cymbals, 85 Hi Hats, 46 Percussion, 24 Shakers, 11 Toms - Installer Size: 660 MB
+
+[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/london-grit/)
 
 | Version | Description - UK Underground | Components |
 | :-----: | :--------------- | :--------: |
@@ -157,5 +158,25 @@
 | DRUM KITS | Kits come pre-assembled for MASCHINE and BATTERY, with color coding for BATTERY and FX-enhanced kits for MASCHINE. |  48 BATTERY Kits, 41 MASCHINE Kits |
 | SYNTH PRESETS | Customizable presets for MASSIVE and MONARK by top sound designers give you the perfect sounds for your genre. |  29 MASSIVE Presets, 22 MONARK Presets |
 | MASCHINE EXCLUSIVE | MASCHINE owners get editable patterns for building ideas fast. Plus, multi-effects macros that are custom-made for your sounds. | 11 Projects, 198 Patterns, 64 Drum Synth Presets, 18 Sample Instruments |
+
+</details>
+
+
+<details>
+
+<summary>Lucid Mission v2.0.1 - 707 MB </summary>
+.
+
+- Drum Sample Breakdown: 94 Kicks, 57 Snares, 48 Claps, 59 Cymbals, 89 Hi Hats, 69 Percussion, 24 Shakers, 33 Toms, Installer Size: 800 MB
+
+[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/lucid-mission/)
+
+| Version | Description - EDM inspired Groove Shaping | Components |
+| :-----: | :--------------- | :--------: |
+| 2.0.1 - 2018-02-19 | 40 MASCHINE and 50 BATTERY Kits designed for total sound shaping - MASSIVE presets for basses, leads, and more. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
+| SAMPLES AND LOOPS | Raw drum hits and one-shots come DAW-ready – plus tempo-based construction loops give you building blocks for inspiration. |  214 Construction Loops, 416 Drum Samples, 69 One Shots |
+| DRUM KITS | Kits come pre-assembled for MASCHINE and BATTERY, with color coding for BATTERY and FX-enhanced kits for MASCHINE. |  50 BATTERY Kits, 40 MASCHINE Kits |
+| SYNTH PRESETS | Customizable presets for MASSIVE by top sound designers give you the perfect sounds for your genre. |  55 MASSIVE Presets |
+| MASCHINE EXCLUSIVE | MASCHINE owners get editable patterns for building ideas fast. Plus, multi-effects macros that are custom-made for your sounds. | 8 Projects, 120 Patterns, 33 Drum Synth Presets, 4 Sample Instruments |
 
 </details>
