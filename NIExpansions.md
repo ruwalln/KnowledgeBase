@@ -1,6 +1,6 @@
 # Native Instruments Expansions
 
-##### Chromatic Fire, Cavern Floor, Deep Matter, 
+##### Chromatic Fire, Cavern Floor, Deep Matter, Lucid Mission
 
 <details>
 
