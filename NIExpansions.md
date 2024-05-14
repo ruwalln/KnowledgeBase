@@ -260,3 +260,23 @@
 | MASCHINE EXCLUSIVE | MASCHINE owners get editable patterns for building ideas fast. Plus, multi-effects macros that are custom-made for your sounds. | 6 Projects, 150+ Patterns, 54 Sample Instruments |
 
 </details>
+
+
+<details>
+
+<summary>Pulsewerk v2.0.1 - 808 MB </summary>
+.
+
+- Drum Sample Breakdown: 91 Kicks, 58 Snares, 34 Claps, 91 Hi Hats, 127 Percussion, 28 Shakers, 16 Toms, Installer Size: 771 MB
+
+[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/pulswerk/)
+
+| Version | Description - Modern Synth Pop | Components |
+| :-----: | :--------------- | :--------: |
+| 2.0.1 - 2018-02-19 | The polished sound of minimalistic techno and house. 50 MASCHINE and 59 BATTERY Kits for carving out distinct tracks for the dancefloor | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
+| SAMPLES AND LOOPS | Raw drum hits and one-shots come DAW-ready – plus tempo-based construction loops give you building blocks for inspiration. |  258 Construction Loops, 445 Drum Samples, 354 One Shots |
+| DRUM KITS | Kits come pre-assembled for MASCHINE and BATTERY, with color coding for BATTERY and FX-enhanced kits for MASCHINE. |   59 BATTERY Kits, 50 MASCHINE Kits |
+| SYNTH PRESETS | Customizable presets for MASSIVE by top sound designers give you the perfect sounds for your genre. |   60 MASSIVE Presets |
+| MASCHINE EXCLUSIVE | MASCHINE owners get editable patterns for building ideas fast. Plus, multi-effects macros that are custom-made for your sounds. | 7 Projects, 215 Patterns |
+
+</details>
