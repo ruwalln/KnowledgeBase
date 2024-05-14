@@ -1,6 +1,6 @@
 # Native Instruments Expansions
 
-##### Chromatic Fire, Cavern Floor, Deep Matter, Lucid Mission, Neon Drive
+##### Chromatic Fire, Cavern Floor, Deep Matter, Lucid Mission, Molten Veil, Neon Drive, Pulsewerk
 
 <details>
 
