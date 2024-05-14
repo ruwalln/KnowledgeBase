@@ -1,6 +1,14 @@
 # Native Instruments Expansions
 
-##### Chromatic Fire, Cavern Floor, Deep Matter, Lucid Mission, Molten Veil, Neon Drive, Pulsewerk
+### Techno, EDM, Electronic, Minimal
+
+- Chromatic Fire 394MB
+- Cavern Floor 900MB
+- Deep Matter 1.63GB
+- Lucid Mission 707MB
+- Molten Veil 505MB
+- Neon Drive 1.29GB
+- Pulsewerk 808MB
 
 <details>
 
