@@ -1,5 +1,16 @@
 # Native Instruments Expansions
 
+
+### Applications required
+
+- Maschine 2.7.2 - 434 MB
+- Battery 4.1 - 223 MB
+- Battery Factory Library - 2.83 GB
+- Massive Synth - 180 MB
+- Monark (Reaktor 6.3.1) - 29 MB 
+- Prism (Reaktor 6.3.1) - 24MB
+- Reaktor 6.3.1 - 92 MB 
+
 ### Techno, EDM, Electronic, Minimal
 
 - Chromatic Fire 394MB
