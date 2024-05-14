@@ -1,6 +1,6 @@
 # Native Instruments Expansions
 
-##### Chromatic Fire, Cavern Floor, Deep Matter, Lucid Mission
+##### Chromatic Fire, Cavern Floor, Deep Matter, Lucid Mission, Neon Drive
 
 <details>
 
@@ -219,5 +219,25 @@
 | DRUM KITS | Kits come pre-assembled for MASCHINE and BATTERY, with color coding for BATTERY and FX-enhanced kits for MASCHINE. |   47 BATTERY Kits, 42 MASCHINE Kits |
 | SYNTH PRESETS | Customizable presets for MASSIVE and MONARK by top sound designers give you the perfect sounds for your genre. |   40 MASSIVE Presets, 45 MONARK Preset |
 | MASCHINE EXCLUSIVE | MASCHINE owners get editable patterns for building ideas fast. Plus, multi-effects macros that are custom-made for your sounds. | 7 Projects, 170+ Patterns, 178 Drum Synth Presets |
+
+</details>
+
+
+<details>
+
+<summary>Neon Drive v2.0.1 - 1.29 GB </summary>
+.
+
+- Drum Sample Breakdown: 54 Kicks, 40 Snares, 36 Claps, 43 Cymbals, 75 Hi Hats, 53 Percussion, 19 Shakers, 24 Toms, Installer Size: 2.11 GB
+
+[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/neon-drive/)
+
+| Version | Description - Modern Synth Pop | Components |
+| :-----: | :--------------- | :--------: |
+| 2.0.1 - 2018-02-19 | 45 MASCHINE and 50 BATTERY Kits with inspiring patterns and projects. MASSIVE and MONARK presets for powerful, floor-rumbling bass  | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
+| SAMPLES AND LOOPS | Raw drum hits and one-shots come DAW-ready – plus tempo-based construction loops give you building blocks for inspiration. |  395 Construction Loops, 299 Drum Samples, 347 One Shots |
+| DRUM KITS | Kits come pre-assembled for MASCHINE and BATTERY, with color coding for BATTERY and FX-enhanced kits for MASCHINE. |   50 BATTERY Kits, 45 MASCHINE Kits |
+| SYNTH PRESETS | Customizable presets for MASSIVE and PRISM by top sound designers give you the perfect sounds for your genre. |   40 MASSIVE Presets, 20 REAKTOR PRISM Presets |
+| MASCHINE EXCLUSIVE | MASCHINE owners get editable patterns for building ideas fast. Plus, multi-effects macros that are custom-made for your sounds. | 8 Projects, 268 Patterns, 43 Drum Synth Presets |
 
 </details>
