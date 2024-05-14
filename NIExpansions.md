@@ -202,3 +202,21 @@
 
 </details>
 
+
+<details>
+
+<summary>Molten Veilv2.0.1 - 505 MB </summary>
+.
+
+- Drum Sample Breakdown: 65 Kicks, 49 Snares, 50 Claps, 50 Cymbals, 90 Hi Hats, 84 Percussion, 21 Shakers, 19 Toms - Installer Size: 720 MB
+
+[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/marble-rims/)
+
+| Version | Description - West Cost funked out | Components |
+| :-----: | :--------------- | :--------: |
+| 2.0.1 - 2018-02-19 | Includes 52 MASCHINE and 58 BATTERY Kits that take you straight to the heart of the SoCal sound  | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
+| SAMPLES AND LOOPS | Raw drum hits and one-shots come DAW-ready – plus tempo-based construction loops give you building blocks for inspiration.. |  342 Construction Loops, 584 Drum Samples, 100 One Shots |
+| DRUM KITS | Kits come pre-assembled for MASCHINE and BATTERY, with color coding for BATTERY and FX-enhanced kits for MASCHINE. |  58 BATTERY Kits, 52 MASCHINE Kits |
+| MASCHINE EXCLUSIVE | MASCHINE owners get editable patterns for building ideas fast. Plus, multi-effects macros that are custom-made for your sounds. | 5 Projects, 150 Patterns, 127 Drum Synth Presets, 4 Sample Instruments |
+
+</details>
