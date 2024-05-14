@@ -9,9 +9,14 @@
 - Massive Synth - 180 MB
 - Monark (Reaktor 6.3.1) - 29 MB 
 - Prism (Reaktor 6.3.1) - 24MB
-- Reaktor 6.3.1 - 92 MB 
+- Reaktor 6.3.1 - 92 MB
+  - Monark
+  - Prism
+  - Blocks Prime
+  - Kontour
+  - Molekular
 
-### Techno, EDM, Electronic, Minimal
+### Expansions : Techno, EDM, Electronic, Minimal
 
 - Chromatic Fire 394MB
 - Cavern Floor 900MB
@@ -27,7 +32,7 @@
 - Grey Forge 49EUR
 - Transistor Punch 49EUR
 
-### House
+### Expansions : House
 
 - Higher Place 49EUR
 - Infinite Escape 49EUR
