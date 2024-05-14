@@ -193,7 +193,7 @@
 
 [AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/marble-rims/)
 
-| Version | Description - EDM inspired Groove Shaping | Components |
+| Version | Description - West Cost funked out | Components |
 | :-----: | :--------------- | :--------: |
 | 2.0.1 - 2018-02-19 | Includes 52 MASCHINE and 58 BATTERY Kits that take you straight to the heart of the SoCal sound  | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
 | SAMPLES AND LOOPS | Raw drum hits and one-shots come DAW-ready – plus tempo-based construction loops give you building blocks for inspiration.. |  342 Construction Loops, 584 Drum Samples, 100 One Shots |
