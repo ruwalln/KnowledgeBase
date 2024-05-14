@@ -255,8 +255,8 @@
 | Version | Description - Modern Synth Pop | Components |
 | :-----: | :--------------- | :--------: |
 | 2.0.1 - 2018-02-19 | Raw drum hits and one-shots come DAW-ready – plus tempo-based construction loops give you building blocks for inspiration. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
-| SAMPLES AND LOOPS | Raw drum hits and one-shots come DAW-ready – plus tempo-based construction loops give you building blocks for inspiration. |  395 Construction Loops, 299 Drum Samples, 347 One Shots |
-| DRUM KITS | Kits come pre-assembled for MASCHINE and BATTERY, with color coding for BATTERY and FX-enhanced kits for MASCHINE. |   50 BATTERY Kits, 45 MASCHINE Kits |
-| MASCHINE EXCLUSIVE | MASCHINE owners get editable patterns for building ideas fast. Plus, multi-effects macros that are custom-made for your sounds. | 8 Projects, 268 Patterns, 43 Drum Synth Presets |
+| SAMPLES AND LOOPS | Raw drum hits and one-shots come DAW-ready – plus tempo-based construction loops give you building blocks for inspiration. |  203 Construction Loops, 589 Drum Samples, 211 One Shots |
+| DRUM KITS | Kits come pre-assembled for MASCHINE and BATTERY, with color coding for BATTERY and FX-enhanced kits for MASCHINE. |   63 BATTERY Kits, 55 MASCHINE Kits |
+| MASCHINE EXCLUSIVE | MASCHINE owners get editable patterns for building ideas fast. Plus, multi-effects macros that are custom-made for your sounds. | 6 Projects, 150+ Patterns, 54 Sample Instruments |
 
 </details>
