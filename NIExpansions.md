@@ -140,3 +140,22 @@
 | 2.0.1 - 2018-02-19 | 49 MASCHINE and 54 BATTERY Kits for fresh creative spark - Customizable presets for MASSIVE by top sound designers give you the perfect sounds for your genre. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
 
 </details>
+
+
+<details>
+
+<summary>London Grid v2.0.1 - 691 MB </summary>
+
+[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/london-grit/)
+
+- Drum Sample Breakdown: 97 Kicks, 69 Snares, 40 Claps, 18 Cymbals, 85 Hi Hats, 46 Percussion, 24 Shakers, 11 Toms - Installer Size: 660 MB
+
+| Version | Description - UK Underground | Components |
+| :-----: | :--------------- | :--------: |
+| 2.0.1 - 2018-02-19 | 41 MASCHINE and 48 BATTERY Kits created by top artists from the underground grime scene - Exclusive MONARK and MASSIVE presets designed for deep bass boom. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
+| SAMPLES AND LOOPS | Raw drum hits and one-shots come DAW-ready – plus tempo-based construction loops give you building blocks for inspiration. |  247 Construction Loops, 395 Drum Samples, 201 One Shots |
+| DRUM KITS | Kits come pre-assembled for MASCHINE and BATTERY, with color coding for BATTERY and FX-enhanced kits for MASCHINE. |  48 BATTERY Kits, 41 MASCHINE Kits |
+| SYNTH PRESETS | Customizable presets for MASSIVE and MONARK by top sound designers give you the perfect sounds for your genre. |  29 MASSIVE Presets, 22 MONARK Presets |
+| MASCHINE EXCLUSIVE | MASCHINE owners get editable patterns for building ideas fast. Plus, multi-effects macros that are custom-made for your sounds. | 11 Projects, 198 Patterns, 64 Drum Synth Presets, 18 Sample Instruments |
+
+</details>
