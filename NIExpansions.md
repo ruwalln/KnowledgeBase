@@ -16,6 +16,9 @@
   - Kontour
   - Molekular
   - Rounds
+  - Reaktor Spark
+  - TRK01
+  - Finger
 
 ### Expansions : Techno, EDM, Electronic, Minimal
 
