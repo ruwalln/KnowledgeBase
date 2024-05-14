@@ -186,7 +186,7 @@
 
 <details>
 
-<summary>Marble Rims v2.0.1 - 2.56 GB </summary>
+<summary>Marble Rims v2.0.1 - 1.73 GB </summary>
 .
 
 - Drum Sample Breakdown: 91 Kicks, 68 Snares, 66 Claps, 10 Cymbals, 106 Hi Hats, 135 Percussion, 74 Shakers, 33 Toms - Installer Size: 2.39 GB
@@ -238,6 +238,25 @@
 | SAMPLES AND LOOPS | Raw drum hits and one-shots come DAW-ready – plus tempo-based construction loops give you building blocks for inspiration. |  395 Construction Loops, 299 Drum Samples, 347 One Shots |
 | DRUM KITS | Kits come pre-assembled for MASCHINE and BATTERY, with color coding for BATTERY and FX-enhanced kits for MASCHINE. |   50 BATTERY Kits, 45 MASCHINE Kits |
 | SYNTH PRESETS | Customizable presets for MASSIVE and PRISM by top sound designers give you the perfect sounds for your genre. |   40 MASSIVE Presets, 20 REAKTOR PRISM Presets |
+| MASCHINE EXCLUSIVE | MASCHINE owners get editable patterns for building ideas fast. Plus, multi-effects macros that are custom-made for your sounds. | 8 Projects, 268 Patterns, 43 Drum Synth Presets |
+
+</details>
+
+
+<details>
+
+<summary>Platinum Bounce v2.0.1 - 1.73 GB </summary>
+.
+
+- Drum Sample Breakdown: 116 Kicks, 99 Snares, 76 Claps, 34 Cymbals, 127 Hi Hats, 52 Percussion, 33 Shakers, 47 Toms, Installer Size: 1.61 GB
+
+[AudioDemo](https://www.native-instruments.com/en/products/komplete/expansions/platinum-bounce/)
+
+| Version | Description - Modern Synth Pop | Components |
+| :-----: | :--------------- | :--------: |
+| 2.0.1 - 2018-02-19 | Raw drum hits and one-shots come DAW-ready – plus tempo-based construction loops give you building blocks for inspiration. | Maschine 2.7.2 , Battery 4.1, Massive Synth, Monark, Prism, Reaktor6 |
+| SAMPLES AND LOOPS | Raw drum hits and one-shots come DAW-ready – plus tempo-based construction loops give you building blocks for inspiration. |  395 Construction Loops, 299 Drum Samples, 347 One Shots |
+| DRUM KITS | Kits come pre-assembled for MASCHINE and BATTERY, with color coding for BATTERY and FX-enhanced kits for MASCHINE. |   50 BATTERY Kits, 45 MASCHINE Kits |
 | MASCHINE EXCLUSIVE | MASCHINE owners get editable patterns for building ideas fast. Plus, multi-effects macros that are custom-made for your sounds. | 8 Projects, 268 Patterns, 43 Drum Synth Presets |
 
 </details>
