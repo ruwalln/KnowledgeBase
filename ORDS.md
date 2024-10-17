@@ -50,6 +50,12 @@ Session wurde geõndert.
 
 ```
 select username, account_status from dba_users where username like '%ORD%' where account_status like '%EXPIRED%'
+
+USERNAME                     ACCOUNT_STATUS   PASSWORD
+---------------------------- --------------- -------------------------------------
+ORDS_PUBLIC_USER             EXPIRED
+
+SQL>
 ```
 
 5. 
