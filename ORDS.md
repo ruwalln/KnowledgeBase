@@ -46,5 +46,10 @@ SQL> alter session set container=xepdb1
 Session wurde geõndert.
 ```
 
+4. Check Users from Database xepdb1 like APEX or ORDS for EXPIRED
 
+```
+select username, account_status from dba_users where username like '%ORD%' where account_status like '%EXPIRED%'
+```
 
+5. 
