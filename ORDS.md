@@ -58,7 +58,7 @@ ORDS_PUBLIC_USER             EXPIRED
 SQL>
 ```
 
-5. ALTER Username password using the DBMS_METADATA.GET_DDL Function
+5. ALTER USER "ORDS_PUBLIC_USER" IDENTIFIED BY VALUES using the DBMS_METADATA.GET_DDL Function
 
 ```
 set long 1000000
