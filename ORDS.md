@@ -8,11 +8,11 @@ ORA-28001: Kennwort ist abgelaufen
 HowTo fix this
 ---------------
 
-<code> 
+'''
 
   Logon to the database using an administrative accout like SYS AS SYSDBA  
   
-<code/>
+'''
 
 
 
