@@ -1,6 +1,6 @@
 # Oracle User Profile usage 
 
-Display all existing Database User Profile
+Display all existing Database User Profile in most cases the default database profile = 'DEFAULT'
 
 ```
 SELECT DISTINCT PROFILE
@@ -21,3 +21,4 @@ ORDER BY PROFILE,
          RESOURCE_NAME
 ```
 There are only two Resource Types available : PASSWORD and KERNEL
+
