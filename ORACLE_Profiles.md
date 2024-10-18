@@ -2,11 +2,11 @@
 
 Display all existing Database User Profile
 
-'''
+```
 SELECT DISTINCT PROFILE
 FROM DBA_PROFILES
 
-'''
+```
 
 Display a specific Database User Profile
 
