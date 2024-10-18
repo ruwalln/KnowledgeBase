@@ -19,9 +19,9 @@ Display all existing Database User Profiles.
 In most cases the default database profile is 'DEFAULT'.
 There are only two Resource Types available : PASSWORD and KERNEL
 
-PASSWORD Resource Type are used to limit :
+PASSWORD Resource Names are used to limit :
 
-| RESOURCE_TYPE | VALUES |
+| RESOURCE_NAME | VALUES |
 | ------------- | ------ |
 | FAILED_LOGIN_ATTEMPTS |  |
 | PASSWORD_LIFE_TIME |  |
