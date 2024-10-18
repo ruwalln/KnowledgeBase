@@ -20,3 +20,4 @@ AND PROFILE='DEFAULT'
 ORDER BY PROFILE,
          RESOURCE_NAME
 ```
+There are only two Resource Types available : PASSWORD and KERNEL
