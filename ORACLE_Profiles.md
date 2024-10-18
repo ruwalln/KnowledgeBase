@@ -17,7 +17,7 @@ PASSWORD Resource Type are used to limit :
 | PASSWORD_GRACE_TIME |  |
 | INACTIVE_ACCOUNT_TIME |  |
 | PASSWORD_ROLLOVER_TIME |  |
-| ------------- | ------ |
+
 
 ```
 SELECT DISTINCT PROFILE
