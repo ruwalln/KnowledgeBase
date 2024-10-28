@@ -33,12 +33,12 @@ Function getMetaData {
     $array
 }
 
-
-#$abc = get-disk
-#getMetaData -objectName $abc
+# --> Steuer Variablen fuer User Input und Endlosschleife
 
 $endless=$true
 $userInput=0
+
+# --> wiederhole bis UserInput = 99
 
 While($endless) {
     write-host "Bitte Funktion auswaehlen"
@@ -68,7 +68,6 @@ While($endless) {
 }                           
 
 ```
-
 
 ##### Object Befehle zum filtern, Spalten selektieren, Sortieren von Spalten, automatsiches Darstellen von Tabellen
 
