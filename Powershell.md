@@ -29,7 +29,7 @@ Function getMetaData {
         [Object] $objectName
     )
     $array = $objectName | get-member -MemberType Property | Select-Object Name, Definition | Format-Table -AutoSize
-    #$array | Select-Object Name, Definition
+    # hier erfolgt die Ausgabe
     $array
 }
 
