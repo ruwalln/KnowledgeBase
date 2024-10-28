@@ -86,7 +86,8 @@ WorkingSet64               long WorkingSet64 {get;}
 ```
 
 
-#####
+##### Object Befehle zum filtern, Spalten selektieren, Sortieren von Spalten, automatsiches Darstellen von Tabellen
+
 - where-object -Property Name -eq String
 - select-object ObjectName 
 - sort-object -Property Name [-Descending]
