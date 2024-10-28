@@ -14,74 +14,58 @@ get-process | select-object Id, Name, PriorityClass, Handle, HandleCount, TotalP
 
 ```
 ##### Metadata Function um TableHeaders auszulesen
+
+
 ```
 
-Function getMetaData($objectName) {
+# --------------------------------------------
+# Verwendung von Functions in der Powershell
+# mit Parameter Wert Uebergabe 
+# --------------------------------------------
 
-$array = $objectName | get-member -MemberType Property | Select-Object Name, Definition
-$array | Select-Object Name, Definition
-
+Function getMetaData {
+    param(
+        [Parameter(Mandatory,Position=0)]
+        [Object] $objectName
+    )
+    $array = $objectName | get-member -MemberType Property | Select-Object Name, Definition | Format-Table -AutoSize
+    #$array | Select-Object Name, Definition
+    $array
 }
 
-$abc = get-process
-$MetaData | getMetaData($abc)
 
-### Ausgabe des Statments
+#$abc = get-disk
+#getMetaData -objectName $abc
 
-Name                       Definition                                                             
-----                       ----------                                                             
-BasePriority               int BasePriority {get;}                                                
-Container                  System.ComponentModel.IContainer Container {get;}                      
-EnableRaisingEvents        bool EnableRaisingEvents {get;set;}                                    
-ExitCode                   int ExitCode {get;}                                                    
-ExitTime                   datetime ExitTime {get;}                                               
-Handle                     System.IntPtr Handle {get;}                                            
-HandleCount                int HandleCount {get;}                                                 
-HasExited                  bool HasExited {get;}                                                  
-Id                         int Id {get;}                                                          
-MachineName                string MachineName {get;}                                              
-MainModule                 System.Diagnostics.ProcessModule MainModule {get;}                     
-MainWindowHandle           System.IntPtr MainWindowHandle {get;}                                  
-MainWindowTitle            string MainWindowTitle {get;}                                          
-MaxWorkingSet              System.IntPtr MaxWorkingSet {get;set;}                                 
-MinWorkingSet              System.IntPtr MinWorkingSet {get;set;}                                 
-Modules                    System.Diagnostics.ProcessModuleCollection Modules {get;}              
-NonpagedSystemMemorySize   int NonpagedSystemMemorySize {get;}                                    
-NonpagedSystemMemorySize64 long NonpagedSystemMemorySize64 {get;}                                 
-PagedMemorySize            int PagedMemorySize {get;}                                             
-PagedMemorySize64          long PagedMemorySize64 {get;}                                          
-PagedSystemMemorySize      int PagedSystemMemorySize {get;}                                       
-PagedSystemMemorySize64    long PagedSystemMemorySize64 {get;}                                    
-PeakPagedMemorySize        int PeakPagedMemorySize {get;}                                         
-PeakPagedMemorySize64      long PeakPagedMemorySize64 {get;}                                      
-PeakVirtualMemorySize      int PeakVirtualMemorySize {get;}                                       
-PeakVirtualMemorySize64    long PeakVirtualMemorySize64 {get;}                                    
-PeakWorkingSet             int PeakWorkingSet {get;}                                              
-PeakWorkingSet64           long PeakWorkingSet64 {get;}                                           
-PriorityBoostEnabled       bool PriorityBoostEnabled {get;set;}                                   
-PriorityClass              System.Diagnostics.ProcessPriorityClass PriorityClass {get;set;}       
-PrivateMemorySize          int PrivateMemorySize {get;}                                           
-PrivateMemorySize64        long PrivateMemorySize64 {get;}                                        
-PrivilegedProcessorTime    timespan PrivilegedProcessorTime {get;}                                
-ProcessName                string ProcessName {get;}                                              
-ProcessorAffinity          System.IntPtr ProcessorAffinity {get;set;}                             
-Responding                 bool Responding {get;}                                                 
-SafeHandle                 Microsoft.Win32.SafeHandles.SafeProcessHandle SafeHandle {get;}        
-SessionId                  int SessionId {get;}                                                   
-Site                       System.ComponentModel.ISite Site {get;set;}                            
-StandardError              System.IO.StreamReader StandardError {get;}                            
-StandardInput              System.IO.StreamWriter StandardInput {get;}                            
-StandardOutput             System.IO.StreamReader StandardOutput {get;}                           
-StartInfo                  System.Diagnostics.ProcessStartInfo StartInfo {get;set;}               
-StartTime                  datetime StartTime {get;}                                              
-SynchronizingObject        System.ComponentModel.ISynchronizeInvoke SynchronizingObject {get;set;}
-Threads                    System.Diagnostics.ProcessThreadCollection Threads {get;}              
-TotalProcessorTime         timespan TotalProcessorTime {get;}                                     
-UserProcessorTime          timespan UserProcessorTime {get;}                                      
-VirtualMemorySize          int VirtualMemorySize {get;}                                           
-VirtualMemorySize64        long VirtualMemorySize64 {get;}                                        
-WorkingSet                 int WorkingSet {get;}                                                  
-WorkingSet64               long WorkingSet64 {get;}                                               
+$endless=$true
+$userInput=0
+
+While($endless) {
+    write-host "Bitte Funktion auswaehlen"
+    write-host "-----------------------------------"
+    write-host "(1) get-disk Table Definition"
+    write-host "(2) get-process Table Definition"
+    write-Host "-----------------------------------"
+    $userInput = read-Host "UserInput 1,2,99 for EXIT"
+    switch($userInput) {
+     '1' 
+      { 
+        $abc = get-disk
+        $getTable = getMetaData -objectName $abc 
+        $getTable    
+      }
+     '2' 
+      {
+        $abc = get-process
+        $getTable = getMetaData -objectName $abc
+        $getTable          
+      }
+    '99' 
+      {
+        $endless=$false
+      }
+   }
+}                           
 
 ```
 
