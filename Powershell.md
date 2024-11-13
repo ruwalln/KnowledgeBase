@@ -15,6 +15,7 @@ Foreach ($bgcolor in $colors){
 Foreach ($fgcolor in $colors) { Write-Host "$fgcolor|" -ForegroundColor $fgcolor -BackgroundColor $bgcolor -NoNewLine }
 Write-Host " on $bgcolor"
 }
+
 ```
   
 <a href="https://learn.microsoft.com/de-de/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.4" target="_blank">Informationen zu Profilen</a>
@@ -115,6 +116,7 @@ $PSReadLineOptions = @{ Colors = @{
 
 ```
 
+TODO CONTINUE !!!
 
 
 ## wichtige Object Befehle
