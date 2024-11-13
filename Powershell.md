@@ -17,7 +17,7 @@ PS C:\Users\zbook> $profile
 C:\Users\zbook\OneDrive\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 ```
 
-[Reference URL](https://learn.microsoft.com/de-de/powershell/module/microsoft.powershell.management/new-item?view=powershell-5.1 target="_blank")
+<a href="https://learn.microsoft.com/de-de/powershell/module/microsoft.powershell.management/new-item?view=powershell-5.1" target="_blank">$Profile</a>
 ```
 # If not exists create one to make changes afterwards
 
