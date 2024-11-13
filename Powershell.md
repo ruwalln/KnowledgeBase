@@ -9,7 +9,7 @@
     https://learn.microsoft.com/de-de/powershell/module/PSReadline/Set-PSReadlineOption?view=powershell-5.1
 
   
-
+<a href="https://learn.microsoft.com/de-de/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.4" target="_blank">Informationen zu Profilen</a>
 ```
 # check where the Default Powershell User Profile is stored
 
@@ -30,7 +30,7 @@ Mode                 LastWriteTime         Length Name
 -a----        13.11.2024     10:17              0 Microsoft.PowerShell_profile.ps1
 ```
 
-Reference URL : https://learn.microsoft.com/de-de/powershell/module/PSReadline/Set-PSReadlineOption?view=powershell-5.1
+<a href="https://learn.microsoft.com/de-de/powershell/module/psreadline/get-psreadlineoption?view=powershell-5.1)" target="_blank">Get-PSReadlineOption</a>
 ```
 # Check the current settings of the Default Powershell User Profile
 
