@@ -10,10 +10,19 @@
 - Display all available Colors in Powershell
 
 ```
+#
+# Display Text on every BGColor FGColor using SYSTEM.ConsoleColor
+#
+
 $colors = [enum]::GetValues([System.ConsoleColor])
-Foreach ($bgcolor in $colors){
-Foreach ($fgcolor in $colors) { Write-Host "$fgcolor|" -ForegroundColor $fgcolor -BackgroundColor $bgcolor -NoNewLine }
-Write-Host " on $bgcolor"
+
+Foreach ($bgcolor in $colors)
+{
+    Foreach ($fgcolor in $colors) 
+    { 
+        Write-Host "$fgcolor|" -ForegroundColor $fgcolor -BackgroundColor $bgcolor -NoNewLine 
+    }
+    Write-Host " on $bgcolor"
 }
 
 ```
