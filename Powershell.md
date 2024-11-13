@@ -7,6 +7,32 @@
 - if not exist you are able to create it using [New-item –type file –force $profile]
 - to see your Default Powershell Options in the Powershell Command Shell Window use [Get-PSReadlineOption]
 
+  Set-PSReadLineOption
+   [-EditMode <EditMode>]
+   [-ContinuationPrompt <String>]
+   [-HistoryNoDuplicates]
+   [-AddToHistoryHandler <System.Func[System.String,System.Object]>]
+   [-CommandValidationHandler <System.Action[System.Management.Automation.Language.CommandAst]>]
+   [-HistorySearchCursorMovesToEnd]
+   [-MaximumHistoryCount <Int32>]
+   [-MaximumKillRingCount <Int32>]
+   [-ShowToolTips]
+   [-ExtraPromptLineCount <Int32>]
+   [-DingTone <Int32>]
+   [-DingDuration <Int32>]
+   [-BellStyle <BellStyle>]
+   [-CompletionQueryItems <Int32>]
+   [-WordDelimiters <String>]
+   [-HistorySearchCaseSensitive]
+   [-HistorySaveStyle <HistorySaveStyle>]
+   [-HistorySavePath <String>]
+   [-AnsiEscapeTimeout <Int32>]
+   [-PromptText <String[]>]
+   [-ViModeIndicator <ViModeStyle>]
+   [-ViModeChangeHandler <ScriptBlock>]
+   [-Colors <Hashtable>]
+   [<CommonParameters>]
+
 ```
 PS C:\Users\zbook> $profile
 C:\Users\zbook\OneDrive\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
