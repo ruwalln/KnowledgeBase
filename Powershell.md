@@ -86,6 +86,11 @@ VariableColor                          : "$([char]0x1b)[92m"
 
 To modify the current Settings of stored settings in the $Profile var you are able to set new values to a hashtable called $PSReadLineOptions
 
+For Reference look inside the wiki to get the corrent ANSI Esc Characters to modify -Colors
+
+<a href="https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters">ANSI Escape Sequences</a>
+<a href="https://jafrog.com/2013/11/23/colors-in-terminal.html">Colors in Terminal</a>
+
 ```
 # set multible colors using one command
 
