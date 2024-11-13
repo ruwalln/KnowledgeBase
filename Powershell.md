@@ -1,5 +1,19 @@
 # Powershell Skeleton
 
+## Voreinstellungen von Powershell Command Console
+
+- Execute and running the Default Powershell Command Window using Powershell.exe
+- Check where the Default User Profile for the Powershell Command Console is stored using [$profile]
+- if not exist you are able to create it using [New-item –type file –force $profile]
+- 
+
+```
+PS C:\Users\zbook> $profile
+C:\Users\zbook\OneDrive\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+
+```
+
+
 ## wichtige Object Befehle
 
 
