@@ -84,7 +84,7 @@ VariableColor                          : "$([char]0x1b)[92m"
 
 ```
 
-To modify the current Settings of stored settings in the $Profile var you are able to set new values to a hashtable called $PSReadLineOptions.
+To modify the current Settings of stored settings in the $Profile var you are able to set new values to a hashtable called $PSReadLineOptions
 
 ```
 # set multible colors using one command
