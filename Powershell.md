@@ -89,6 +89,7 @@ To modify the current Settings of stored settings in the $Profile var you are ab
 For Reference look inside the wiki to get the corrent ANSI Esc Characters to modify -Colors
 
 <a href="https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters">ANSI Escape Sequences</a>
+<p></p>
 <a href="https://jafrog.com/2013/11/23/colors-in-terminal.html">Colors in Terminal</a>
 
 ```
