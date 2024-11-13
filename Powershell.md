@@ -1,17 +1,68 @@
-# Powershell Skeleton
+# Powershell Skeleton Knowledge
 
 ## Voreinstellungen von Powershell Command Console
 
 - Execute and running the Default Powershell Command Window using Powershell.exe
 - Check where the Default User Profile for the Powershell Command Console is stored using [$profile]
 - if not exist you are able to create it using [New-item –type file –force $profile]
-- 
+- to see your Default Powershell Options in the Powershell Command Shell Window use [Get-PSReadlineOption]
 
 ```
 PS C:\Users\zbook> $profile
 C:\Users\zbook\OneDrive\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 
+PS C:\Users\zbook\OneDrive\Documents\WindowsPowerShell> New-item -type file -force $profile
+
+    Verzeichnis: C:\Users\zbook\OneDrive\Documents\WindowsPowerShell
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        13.11.2024     10:17              0 Microsoft.PowerShell_profile.ps1
+
+PS C:\Users\zbook\OneDrive\Documents\WindowsPowerShell> Get-PSReadlineOption
+
+
+EditMode                               : Windows
+AddToHistoryHandler                    :
+HistoryNoDuplicates                    : True
+HistorySavePath                        : C:\Users\zbook\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.
+                                         txt
+HistorySaveStyle                       : SaveIncrementally
+HistorySearchCaseSensitive             : False
+HistorySearchCursorMovesToEnd          : False
+MaximumHistoryCount                    : 4096
+ContinuationPrompt                     : >>
+ExtraPromptLineCount                   : 0
+PromptText                             : >
+BellStyle                              : Audible
+DingDuration                           : 50
+DingTone                               : 1221
+CommandsToValidateScriptBlockArguments : {ForEach-Object, %, Invoke-Command, icm...}
+CommandValidationHandler               :
+CompletionQueryItems                   : 100
+MaximumKillRingCount                   : 10
+ShowToolTips                           : True
+ViModeIndicator                        : None
+WordDelimiters                         : ;:,.[]{}()/\|^&*-=+'"–—―
+CommandColor                           : "$([char]0x1b)[93m"
+CommentColor                           : "$([char]0x1b)[32m"
+ContinuationPromptColor                : "$([char]0x1b)[33m"
+DefaultTokenColor                      : "$([char]0x1b)[33m"
+EmphasisColor                          : "$([char]0x1b)[96m"
+ErrorColor                             : "$([char]0x1b)[91m"
+KeywordColor                           : "$([char]0x1b)[92m"
+MemberColor                            : "$([char]0x1b)[97m"
+NumberColor                            : "$([char]0x1b)[97m"
+OperatorColor                          : "$([char]0x1b)[90m"
+ParameterColor                         : "$([char]0x1b)[90m"
+SelectionColor                         : "$([char]0x1b)[35;43m"
+StringColor                            : "$([char]0x1b)[36m"
+TypeColor                              : "$([char]0x1b)[37m"
+VariableColor                          : "$([char]0x1b)[92m"
+
 ```
+
+
 
 
 ## wichtige Object Befehle
