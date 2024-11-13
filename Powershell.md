@@ -15,7 +15,8 @@
 
 PS C:\Users\zbook> $profile
 C:\Users\zbook\OneDrive\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
-
+```
+```
 # If not exists create one to make changes afterwards
 
 PS C:\Users\zbook\OneDrive\Documents\WindowsPowerShell> New-item -type file -force $profile
@@ -25,7 +26,8 @@ PS C:\Users\zbook\OneDrive\Documents\WindowsPowerShell> New-item -type file -for
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
 -a----        13.11.2024     10:17              0 Microsoft.PowerShell_profile.ps1
-
+```
+```
 # Check the current settings of the Default Powershell User Profile
 
 PS C:\Users\zbook\OneDrive\Documents\WindowsPowerShell> Get-PSReadlineOption
@@ -34,8 +36,7 @@ PS C:\Users\zbook\OneDrive\Documents\WindowsPowerShell> Get-PSReadlineOption
 EditMode                               : Windows
 AddToHistoryHandler                    :
 HistoryNoDuplicates                    : True
-HistorySavePath                        : C:\Users\zbook\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.
-                                         txt
+HistorySavePath                        : C:\Users\zbook\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
 HistorySaveStyle                       : SaveIncrementally
 HistorySearchCaseSensitive             : False
 HistorySearchCursorMovesToEnd          : False
