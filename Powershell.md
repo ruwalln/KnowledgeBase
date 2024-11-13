@@ -7,7 +7,7 @@
 - if not exists you are able to create it using [New-item –type file –force $profile]
 - to see your Default Powershell Options in the Powershell Command Shell Window use [Get-PSReadlineOption]
     https://learn.microsoft.com/de-de/powershell/module/PSReadline/Set-PSReadlineOption?view=powershell-5.1
-- Display all available Colors in Powershell
+- Display all available Colors in Powershell using .NET Framework [System.ConsoleColor]
 
 ```
 #
