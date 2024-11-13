@@ -7,7 +7,15 @@
 - if not exists you are able to create it using [New-item –type file –force $profile]
 - to see your Default Powershell Options in the Powershell Command Shell Window use [Get-PSReadlineOption]
     https://learn.microsoft.com/de-de/powershell/module/PSReadline/Set-PSReadlineOption?view=powershell-5.1
+- Display all available Colors in Powershell
 
+```
+$colors = [enum]::GetValues([System.ConsoleColor])
+Foreach ($bgcolor in $colors){
+Foreach ($fgcolor in $colors) { Write-Host "$fgcolor|" -ForegroundColor $fgcolor -BackgroundColor $bgcolor -NoNewLine }
+Write-Host " on $bgcolor"
+}
+```
   
 <a href="https://learn.microsoft.com/de-de/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.4" target="_blank">Informationen zu Profilen</a>
 ```
