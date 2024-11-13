@@ -4,7 +4,7 @@
 
 - Execute and running the Default Powershell Command Window using Powershell.exe
 - Check where the Default User Profile for the Powershell Command Console is stored using [$profile]
-- if not exist you are able to create it using [New-item –type file –force $profile]
+- if not exists you are able to create it using [New-item –type file –force $profile]
 - to see your Default Powershell Options in the Powershell Command Shell Window use [Get-PSReadlineOption]
     https://learn.microsoft.com/de-de/powershell/module/PSReadline/Set-PSReadlineOption?view=powershell-5.1
 
@@ -16,6 +16,8 @@
 PS C:\Users\zbook> $profile
 C:\Users\zbook\OneDrive\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 ```
+
+Reference URL : https://learn.microsoft.com/de-de/powershell/module/microsoft.powershell.management/new-item?view=powershell-5.1
 ```
 # If not exists create one to make changes afterwards
 
@@ -27,6 +29,8 @@ Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
 -a----        13.11.2024     10:17              0 Microsoft.PowerShell_profile.ps1
 ```
+
+Reference URL : https://learn.microsoft.com/de-de/powershell/module/PSReadline/Set-PSReadlineOption?view=powershell-5.1
 ```
 # Check the current settings of the Default Powershell User Profile
 
