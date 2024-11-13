@@ -84,6 +84,30 @@ VariableColor                          : "$([char]0x1b)[92m"
 
 ```
 
+To modify the current Settings of stored settings in the $Profile var you are able to set new values to a hashtable called $PSReadLineOptions.
+
+```
+# set multible colors using one command
+
+Set-PSReadLineOption -Colors @{
+  Command            = 'Magenta'
+  Number             = 'DarkGray'
+  Member             = 'DarkGray'
+  Operator           = 'DarkGray'
+  Type               = 'DarkGray'
+  Variable           = 'DarkGreen'
+  Parameter          = 'DarkGreen'
+  ContinuationPrompt = 'DarkGray'
+  Default            = 'DarkGray'
+}
+
+# OR using a hashtable variable to modify the settings
+
+$PSReadLineOptions = @{ Colors = @{ 
+    "Command"="Green"
+    }}
+
+```
 
 
 
