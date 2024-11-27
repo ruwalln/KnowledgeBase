@@ -3,15 +3,17 @@
 Create or Replace a procedure written in PL/SQL
 
 ```
-CREATE OR REPLACE PROCEDURE check_date (date1 IN DATE, date2 IN DATE)
-IS
+CREATE OR REPLACE FUNCTION apex_labs.check_date (
+                 date1 IN DATE, 
+                 date2 IN DATE )
+RETURN VARCHAR2 IS
 -- DECLARE
 BEGIN
    IF (TRUNC(date1) > TRUNC(date2)) 
    THEN
-      dbms_output.put_line('TRUE');
+      RETURN 'TRUE';
    ELSE
-      dbms_output.put_line('FALSE');
+      RETURN 'FALSE';
    END IF;
 END;
 ```
