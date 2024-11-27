@@ -3,11 +3,11 @@
 Create or Replace a procedure written in PL/SQL
 
 ```
-CREATE OR REPLACE PROCEDURE check_date (date1 in DATE)
+CREATE OR REPLACE PROCEDURE check_date (date1 IN DATE, date2 IN DATE)
 IS
 -- DECLARE
 BEGIN
-   IF (TRUNC(sysdate) > TO_DATE('01.01.2024','DD.MM.YYYY')) 
+   IF (TRUNC(date1) > TRUNC(date2)) 
    THEN
       dbms_output.put_line('TRUE');
    ELSE
