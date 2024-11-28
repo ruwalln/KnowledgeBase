@@ -1,5 +1,43 @@
 # ORACLE DATABASE Knowledge
 
+## ORACLE Database Connection Types
+
+- Operating System Authentication
+
+```
+C:\>sqlplus / as sysdba
+
+SQL*Plus: Release 21.0.0.0.0 - Production on Do Nov 28 10:59:46 2024
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle.  All rights reserved.
+
+
+Verbunden mit:
+Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production
+Version 21.3.0.0.0
+
+SQL>
+
+```
+
+- Easy Connect Syntax (no configuration files needed)
+
+```
+C:\>sqlplus /nolog
+
+SQL*Plus: Release 21.0.0.0.0 - Production on Do Nov 28 11:01:49 2024
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle.  All rights reserved.
+
+SQL> connect system/manager@localhost:1521/xepdb1
+Connect durchgef├╝hrt.
+SQL>
+```
+
+
+
 ## Scripts Section - Using Dynamic Performance View
 
 ### V$DATABASE
