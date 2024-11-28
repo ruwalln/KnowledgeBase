@@ -52,7 +52,27 @@ SQL> connect system/manager@localhost:1521/xepdb1
 Connect durchgef├╝hrt.
 SQL>
 ```
+- Show current container
 
+
+```
+SQL> show con_name
+
+CON_NAME
+------------------------------
+XEPDB1
+
+```
+- Show current PDBS exists in the container
+
+```
+SQL> show pdbs
+
+    CON_ID CON_NAME                       OPEN MODE  RESTRICTED
+---------- ------------------------------ ---------- ----------
+         2 PDB$SEED                       READ ONLY  NO
+         3 XEPDB1                         READ WRITE NO
+```
 
 
 ## Scripts Section - Using Dynamic Performance View
