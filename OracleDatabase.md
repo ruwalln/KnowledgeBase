@@ -27,7 +27,12 @@ SET LD_LIBRARY_PATH=C:\Users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\
 
 Afterwards you are able to execute SQL.EXE inside the folder C:\Users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\bin as shown in the example.
 
+- The current ORACLE_HOME is C:\app\zbook\product\21c\dbhomeXE
+- The Path variable includes C:\app\zbook\product\21c\dbhomeXE\bin folder to execute Oracle executables.
+
+
 ```
+
 
 ```
 
