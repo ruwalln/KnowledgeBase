@@ -2,7 +2,11 @@
 
 ## Scripts Section - Using Dynamic Performance View
 
+### V$DATABASE
+
 ```
+-- using V$DATABASES
+
 select DBID
 , NAME
 , CREATED
@@ -24,4 +28,21 @@ SQL> /
 
 ```
 
+### V$CONTAINERS
 
+```
+select CON_ID
+,DBID
+,GUID
+,NAME
+,OPEN_MODE
+,RESTRICTED
+,OPEN_TIME
+,TOTAL_SIZE
+,BLOCK_SIZE
+,RECOVERY_STATUS
+,MAX_SIZE
+from v$containers
+
+
+```
