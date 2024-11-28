@@ -2,10 +2,16 @@
 
 ## Check Requirements
 
-- In an ORACLE Linux environment please check the following assigments in the environment before connecting to an Oracle Database.
+
+In an ORACLE Linux environment please check the following assigments in the environment before connecting to an Oracle Database.
 
 oracle@host$ id <enter>
 uid=54321(oracle), gid=54321(oinstall), groups=54321(oinstall), 54322(dba), 54323(oper), 54324(backupdba), 54325(dgdba), 54326(kmdba), 54330(racdba) 
+
+To select an Oracle Instance for your current environment please use the oraenv script
+
+oracle@host$ . oraenv
+
 
 
 ## ORACLE Database Connection Types
