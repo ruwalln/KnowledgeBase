@@ -15,6 +15,21 @@ ORACLE_SID
 
 oracle@host$ . oraenv
 
+## How to use SQLCl using an Windows environment
+
+First download the current version of SQLCl from the Oracle Website 
+decompress the file into an directory inside a Users local APP folder for example : C:\Users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\lib
+We assume all other Oracle Tools from the User are stored here C:\Users\zbook\app\oracle\tools
+To execute the current SQLCl Client you have to make C:\Users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\bin as a current directory.
+Now you have to set the env variable 
+
+SET LD_LIBRARY_PATH=C:\Users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\lib
+
+Afterwards you are able to execute SQL.EXE inside the folder C:\Users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\bin as shown in the example.
+
+```
+
+```
 
 
 ## ORACLE Database Connection Types
