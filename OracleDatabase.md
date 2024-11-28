@@ -28,11 +28,55 @@ SET LD_LIBRARY_PATH=C:\Users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\
 Afterwards you are able to execute SQL.EXE inside the folder C:\Users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\bin as shown in the example.
 
 - The current ORACLE_HOME is C:\app\zbook\product\21c\dbhomeXE
-- The Path variable includes C:\app\zbook\product\21c\dbhomeXE\bin folder to execute Oracle executables.
+- The PATH variable includes C:\app\zbook\product\21c\dbhomeXE\bin folder to execute Oracle executables.
+- Changes diectory to C:\Users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\bin
+- SET LD_LIBRARY_PATH=C:\Users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\lib
+- execute SQL.EXE from C:\Users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\bin folder
+- you are done
 
+Example for executing SQLCl in a Microsoft Windows Environment
 
 ```
+c:\>SET ORACLE_HOME=C:\app\zbook\product\21c\dbhomeXE
 
+c:\>cd %ORACLE_HOME%
+
+C:\app\zbook\product\21c\dbhomeXE>cd C:\Users\zbook\app\oracle\tools
+
+C:\Users\zbook\app\oracle\tools>dir
+ Volume in Laufwerk C: hat keine Bezeichnung.
+ Volumeseriennummer: 5E15-AA2F
+
+ Verzeichnis von C:\Users\zbook\app\oracle\tools
+
+12.11.2024  10:36    <DIR>          .
+12.11.2024  10:36    <DIR>          ..
+25.11.2023  11:25    <DIR>          datamodeler
+12.11.2024  10:36    <DIR>          sqlcl-24.2.0.180.1721
+12.11.2024  10:35        68.708.889 sqlcl-24.2.0.180.1721.zip
+28.11.2023  13:49    <DIR>          sqldeveloper-22.2.1
+28.11.2023  13:27    <DIR>          sqldeveloper21.4.3
+               1 Datei(en),     68.708.889 Bytes
+               6 Verzeichnis(se), 110.796.472.320 Bytes frei
+
+C:\Users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721>cd C:\Users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\lib
+
+C:\Users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\lib>set LD_LIBRARY_PATH=C:\Users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\lib
+
+C:\Users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\lib>cd C:\Users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\bin
+
+C:\Users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\bin>sql / as sysdba
+Copyright (c) 1982, 2024, Oracle. All rights reserved. Alle Rechte vorbehalten.
+
+Verbunden mit:
+Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production
+Version 21.3.0.0.0
+
+SQL> set sqlformat csv
+SQL> select * from dual
+  2* /
+"DUMMY"
+"X"
 
 ```
 
