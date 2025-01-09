@@ -141,6 +141,20 @@ SQL> show pdbs
 
 ## Scripts Section - Using Dynamic Performance View
 
+### Display all existing Dynamic Performance Views in CDB
+
+To display all available Dynamic Peformance Views in the CDB please query the data-dictionary and the table V$FIXED_TABLE.
+
+### V$FIXED_TABLE
+
+'''
+select *
+from V$FIXED_TABLE
+where name like 'V$%'
+order by name
+/
+'''
+
 ### V$DATABASE
 
 ```
