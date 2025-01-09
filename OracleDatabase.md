@@ -147,13 +147,13 @@ To display all available Dynamic Peformance Views in the CDB please query the da
 
 ### V$FIXED_TABLE
 
-'''
+```
 select *
 from V$FIXED_TABLE
 where name like 'V$%'
 order by name
 /
-'''
+```
 
 ### V$DATABASE
 
