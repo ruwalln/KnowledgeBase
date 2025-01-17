@@ -201,8 +201,8 @@ Enter Help [topic] for help.
 | ------- | ------------ |
 | @   | Runs the SQL*Plus statements in the specified script. The script can be called from the local file system or from a web server. The @ command functions similarly to @@ and START. |
 | @@    |  Runs a script. This command is almost identical to the @ (at sign) command. When running nested scripts it looks for nested scripts in the same path or url as the calling script. The @@ command functions similarly to @ and START. |   
-| /       |    
-| ACCEPT    |  
+| /       | Executes the most recently executed SQL command or PL/SQL block which is stored in the SQL buffer. |   
+| ACCEPT    |  Reads a line of input and stores it in a given substitution variable. |
 | APPEND     | 
 | ARCHIVE LOG| 
 | ATTRIBUTE  | 
