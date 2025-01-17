@@ -4,8 +4,8 @@
 
 ### SQLPLUS systemwide Profile
 
-Please locate the systemwide profile in %ORACLE_HOME\SQLPLUS\ADMIN (Windows) OR $ORALE_HOME/SQLPLUS/ADMIN -> glogin.sql
-You will find the User specific Profile in %ORACLE_HOME\SQLPLUS\ADMIN (Windows) OR $ORALE_HOME/SQLPLUS/ADMIN -> login.sql
+Please locate the systemwide profile in %ORACLE_HOME\SQLPLUS\ADMIN (Windows) OR $ORALE_HOME/SQLPLUS/ADMIN -> glogin.sql.
+You will find the User specific Profile in %ORACLE_HOME\SQLPLUS\ADMIN (Windows) OR $ORALE_HOME/SQLPLUS/ADMIN -> login.sql.
 
 
 <div class="tblformal" id="GUID-5A2953BF-9E2F-450B-AFBA-EE2846C59B5E__GUID-58035520-186F-435E-9D78-35D3E2BB6508">
