@@ -198,19 +198,19 @@ Enter Help [topic] for help.
 
 
 | COMMAND |  Description |
-| ------- | ------------ |
+| ---------------- | --------------------- |
 | @   | Runs the SQL*Plus statements in the specified script. The script can be called from the local file system or from a web server. The @ command functions similarly to @@ and START. |
 | @@    |  Runs a script. This command is almost identical to the @ (at sign) command. When running nested scripts it looks for nested scripts in the same path or url as the calling script. The @@ command functions similarly to @ and START. |   
 | /       | Executes the most recently executed SQL command or PL/SQL block which is stored in the SQL buffer. |   
 | ACCEPT    |  Reads a line of input and stores it in a given substitution variable. |
-| APPEND     | 
-| ARCHIVE LOG| 
-| ATTRIBUTE  | 
-| BREAK      | 
-| BTITLE     | 
-| CHANGE     | 
-| CLEAR      | 
-| COLUMN     |
+| APPEND     | Adds specified text to the end of the current line in the SQL buffer. To separate text from the preceding characters with a space, enter two spaces between APPEND and text. To APPEND text that ends with a semicolon, end the command with two semicolons (SQL*Plus interprets a single semicolon as an optional command terminator). |
+| ARCHIVE LOG LIST | Displays information about redo log files. |
+| ATTRIBUTE  | Specifies display characteristics for a given attribute of an Object Type column, such as the format of NUMBER data. Columns and attributes should not have the same names as they share a common namespace. Lists the current display characteristics for a single attribute or all attributes. |
+| BREAK      |  Specifies where changes occur in a report and the formatting action to perform, such as: - suppressing display of duplicate values for a given column - skipping a line each time a given column value changes- printing computed figures each time a given column value changes or at the end of the report. Enter BREAK with no clauses to list the current BREAK definition. |
+| BTITLE     |  Places and formats a specified title at the bottom of each report page, or lists the current BTITLE definition. |
+| CHANGE     |  Changes the first occurrence of the specified text on the current line of the SQL buffer. The buffer has no command history list and does not record SQL*Plus commands. |
+| CLEAR      | Resets or erases the current value or setting for the specified option. [CLEAR SCREEN] |
+| COLUMN     |  Specifies display attributes for a given column, such as: - text for the column heading - alignment for the column heading - format for NUMBER data - wrapping of column data Also lists the current display attributes for a single column or all columns. |
 | COMPUTE    | 
 | CONNECT    | 
 | COPY       | 
