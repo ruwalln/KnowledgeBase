@@ -2,10 +2,13 @@
 
 ## How to configure SQLPLUS using a systemwide and user specific profile
 
-### SQLPLUS systemwide Profile
+### SQLPLUS systemwide OR User specific Profile
 
-Please locate the systemwide profile in %ORACLE_HOME\SQLPLUS\ADMIN (Windows) OR $ORALE_HOME/SQLPLUS/ADMIN -> glogin.sql.
-You will find the User specific Profile in %ORACLE_HOME\SQLPLUS\ADMIN (Windows) OR $ORALE_HOME/SQLPLUS/ADMIN -> login.sql.
+Please locate the global Site profile in %ORACLE_HOME\SQLPLUS\ADMIN (Windows) OR $ORALE_HOME/SQLPLUS/ADMIN 
+- Global Site SQLPLUS Profile : glogin.sql
+- User specific SQLPLUS Profile : login.sql
+
+### Environment variables OS and/or Windows registry 
 
 
 <div class="tblformal" id="GUID-5A2953BF-9E2F-450B-AFBA-EE2846C59B5E__GUID-58035520-186F-435E-9D78-35D3E2BB6508">
@@ -132,3 +135,4 @@ sqlplus hr</pre><p>is the same as:</p><pre class="oac_no_warn" dir="ltr">sqlplus
                         </tbody>
                      </table>
                   </div>
+
