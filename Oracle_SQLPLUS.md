@@ -136,3 +136,19 @@ sqlplus hr</pre><p>is the same as:</p><pre class="oac_no_warn" dir="ltr">sqlplus
                      </table>
                   </div>
 
+### Install and configure SQLPLUS Help System in Oracle Database
+
+- Scripts to use are located in $ORACLE_HOME/SQLPLUS/ADMIN/HELP
+
+```
+-- first login as system user to install SQLPLUS Help in the database
+
+conn system/manager
+
+-- for LINUX and UNIX use this
+@$ORACLE_HOME/sqlplus/admin/help/hlpbld.sql helpus.sql
+
+-- for Windows use this
+@%ORACLE_HOME%\SQLPLUS\ADMIN\HELP\HLPBLD.SQL HELPUS.SQL
+
+```
