@@ -152,3 +152,107 @@ conn system/manager
 @%ORACLE_HOME%\SQLPLUS\ADMIN\HELP\HLPBLD.SQL HELPUS.SQL
 
 ```
+### Using Help inside SQLPLUS command line interface
+
+- Enter Help to get help for SQLPLUS from the SQL> Prompt.
+
+```
+SYSTEM@XE SQL> help
+
+ HELP
+ ----
+
+ Accesses this command line help system. Enter HELP INDEX or ? INDEX
+ for a list of topics.
+
+ You can view SQL*Plus resources at
+     http://www.oracle.com/technology/documentation/
+
+ ******************************************************************************
+
+ HELP|? [topic]
+```
+- Enter HELP INDEX to get an overview for all available Help topics.
+
+```
+SYSTEM@XE SQL> help index
+
+Enter Help [topic] for help.
+
+ @             COPY         PASSWORD                 SHOW
+ @@            DEFINE       PAUSE                    SHUTDOWN
+ /             DEL          PRINT                    SPOOL
+ ACCEPT        DESCRIBE     PROMPT                   SQLPLUS
+ APPEND        DISCONNECT   QUIT                     START
+ ARCHIVE LOG   EDIT         RECOVER                  STARTUP
+ ATTRIBUTE     EXECUTE      REMARK                   STORE
+ BREAK         EXIT         REPFOOTER                TIMING
+ BTITLE        GET          REPHEADER                TTITLE
+ CHANGE        HELP         RESERVED WORDS (SQL)     UNDEFINE
+ CLEAR         HISTORY      RESERVED WORDS (PL/SQL)  VARIABLE
+ COLUMN        HOST         RUN                      WHENEVER OSERROR
+ COMPUTE       INPUT        SAVE                     WHENEVER SQLERROR
+ CONNECT       LIST         SET                      XQUERY
+```
+### SQLPLUS Command Overview
+
+
+| COMMAND |  Description |
+| ------- | ------------ |
+| @   | Runs the SQL*Plus statements in the specified script. The script can be called from the local file system or from a web server. The @ command functions similarly to @@ and START. |
+| @@    |  Runs a script. This command is almost identical to the @ (at sign) command. When running nested scripts it looks for nested scripts in the same path or url as the calling script. The @@ command functions similarly to @ and START. |   
+| /       |    
+| ACCEPT    |  
+| APPEND     | 
+| ARCHIVE LOG| 
+| ATTRIBUTE  | 
+| BREAK      | 
+| BTITLE     | 
+| CHANGE     | 
+| CLEAR      | 
+| COLUMN     |
+| COMPUTE    | 
+| CONNECT    | 
+| COPY       | 
+| DEFINE       | 
+| DEL          | 
+| DESCRIBE     | 
+| DISCONNECT   | 
+| EDIT         | 
+| EXECUTE      | 
+| EXIT         | 
+| GET          | 
+| HELP         | 
+| HISTORY      | 
+| HOST         | 
+| INPUT        | 
+| LIST         |
+| PASSWORD      |          
+| PAUSE           |        
+| PRINT             |      
+| PROMPT              |    
+| QUIT                  |  
+| RECOVER                | 
+| REMARK                 | 
+| REPFOOTER              | 
+| REPHEADER              | 
+| RESERVED WORDS (SQL)   | 
+| RESERVED WORDS (PL/SQL)| 
+| RUN                    | 
+| SAVE                   | 
+| SET| 
+| SHOW | 
+| SHUTDOWN | 
+| SPOOL | 
+| SQLPLUS | 
+| START | 
+| STARTUP | 
+| STORE | 
+| TIMING | 
+| TTITLE | 
+| UNDEFINE | 
+| VARIABLE | 
+| WHENEVER OSERROR | 
+| WHENEVER SQLERROR | 
+| XQUERY | 
+| --------------------------- | ---------------------- |
