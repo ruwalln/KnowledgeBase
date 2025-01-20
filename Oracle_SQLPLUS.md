@@ -214,13 +214,13 @@ Enter Help [topic] for help.
 | **CHANGE**     |  Changes the first occurrence of the specified text on the current line of the SQL buffer. The buffer has no command history list and does not record SQL*Plus commands. |
 | **CLEAR**      | Resets or erases the current value or setting for the specified option. [CLEAR SCREEN] |
 | **COLUMN**     |  Specifies display attributes for a given column, such as: - text for the column heading - alignment for the column heading - format for NUMBER data - wrapping of column data Also lists the current display attributes for a single column or all columns. |
-| **COMPUTE**    | 
-| **CONNECT**    | 
-| **COPY**       | 
-| **DEFINE**       | 
-| **DEL**          | 
-| **DESCRIBE**     | 
-| **DISCONNECT**   | 
+| **COMPUTE**    | In combination with the BREAK command, calculates and prints summary lines using various standard computations. Also lists all COMPUTE definitions. |
+| **CONNECT**    | Connects a given username to the Oracle Database. When you run a CONNECT command, the site profile, glogin.sql, and the user profile, login.sql, are processed in that order. CONNECT does not repromptfor username or password if the initial connection does not succeed. |
+| **COPY**       | Copies data from a query to a table in the same or another database. COPY supports CHAR, DATE, LONG, NUMBER and VARCHAR2. |
+| **DEFINE**       | Specifies a substitution variable and assigns a CHAR value to it, or lists the value and variable type of a single variable or all variables. |
+| **DEL**          | Deletes one or more lines of the SQL buffer. The buffer has no command history list and does not record SQL*Plus commands. |
+| **DESCRIBE**     | Lists the column definitions for a table, view, or synonym, or the specifications for a function or procedure. |
+| **DISCONNECT**   | Commits pending changes to the database and logs the current user out of Oracle, but does not exit SQL*Plus. In SQL*Plus command line, use EXIT or QUIT to log out of Oracle and return control to your computer's operating system. |
 | **EDIT**         | 
 | **EXECUTE**      | 
 | **EXIT**         | 
