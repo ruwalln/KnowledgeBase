@@ -229,15 +229,15 @@ Enter Help [topic] for help.
 | **HISTORY**      | Stores, lists, executes, or edits commands entered during the current SQL*Plus session. |
 | **HOST**         | Executes an operating system command without leaving SQL*Plus. Enter HOST without command to display an operating system prompt. You can then enter multiple operating system commands. |
 | **INPUT**        |  Adds one or more new lines of text after the current line in the SQL buffer. The buffer has no command history list and does not record SQL*Plus commands. |
-| **LIST**         | Lists one or more lines of the most recently executed SQL command or PL/SQL block which is stored in the SQL buffer. Enter LIST with no clauses to list all lines. In SQL*Plus command-line you can also use ";" to list all the lines in the SQL buffer. The buffer has no command history list and does not record SQL*Plus commands. |
-| **PASSWORD**      |          
-| **PAUSE**           |        
-| **PRINT**             |      
-| **PROMPT**              |    
-| **QUIT**                  |  
-| **RECOVER**                | 
-| **REMARK**                 | 
-| **REPFOOTER**              | 
+| **LIST**         | Lists one or more lines of the most recently executed SQL command or PL/SQL block which is stored in the SQL buffer. Enter LIST with no clauses to list all lines. In SQLPlus command-line you can also use ";" to list all the lines in the SQL buffer. The buffer has no command history list and does not record SQLPlus commands. |
+| **PASSWORD**      |  Allows you to change a password without displaying it on an input device. |        
+| **PAUSE**           | Displays the specified text then waits for the user to press RETURN. |       
+| **PRINT**             | Displays the current values of bind variables, or lists all bind variables. |
+| **PROMPT**              | Sends the specified message or a blank line to the user's screen. |  
+| **QUIT**                  |  Commits or rolls back all pending changes, logs out of Oracle, terminates SQL*Plus and returns control to the operating system. |
+| **RECOVER**                | Performs media recovery on one or more tablespaces, one or more datafiles, or the entire database. |
+| **REMARK**                 | Begins a comment in a script. SQL*Plus does not interpret the comment as a command.|
+| **REPFOOTER**              | Places and formats a footer at the bottom of a report, or lists the REPFOOTER definition. |
 | **REPHEADER**              | 
 | **RESERVED WORDS (SQL)**   | 
 | **RESERVED WORDS (PL/SQL)**| 
