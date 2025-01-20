@@ -195,8 +195,6 @@ Enter Help [topic] for help.
  CONNECT       LIST         SET                      XQUERY
 ```
 
-<HR>
-
 ### SQLPLUS Command Overview
 
 
@@ -238,9 +236,9 @@ Enter Help [topic] for help.
 | **RECOVER**                | Performs media recovery on one or more tablespaces, one or more datafiles, or the entire database. |
 | **REMARK**                 | Begins a comment in a script. SQL*Plus does not interpret the comment as a command.|
 | **REPFOOTER**              | Places and formats a footer at the bottom of a report, or lists the REPFOOTER definition. |
-| **REPHEADER**              | 
-| **RESERVED WORDS (SQL)**   | 
-| **RESERVED WORDS (PL/SQL)**| 
+| **REPHEADER**              | Places and formats a header at the top of a report, or lists the REPHEADER definition. |
+| **RESERVED WORDS (SQL)**   | (see list xx.xx)
+| **RESERVED WORDS (PL/SQL)**| (see list xx.xx)
 | **RUN**                    | 
 | **SAVE**                   | 
 | **SET**| 
@@ -259,4 +257,51 @@ Enter Help [topic] for help.
 | **WHENEVER SQLERROR** | 
 | **XQUERY** | 
 
-<HR>
+### Oracle Reserved Words PL/SQL
+
+PL/SQL Reserved Words have special meaning in PL/SQL, and may not be used
+ for identifier names (unless enclosed in "quotes").
+
+ An asterisk (*) indicates words are also SQL Reserved Words.
+|         1      |     2           |    3           |    4            |    5       |
+| ------------- | -------------- | ------------- | -------------- | --------- |
+| ALL*          |  DESC*         |  JAVA         |   PACKAGE      |   SUBTYPE |
+| ALTER*        |  DISTINCT*     |  LEVEL*       |  PARTITION     |  SUCCESSFUL* |
+|  AND*        |    DO           |   LIKE*       |    PCTFREE*    |    SUM |
+|  ANY*        |    DROP*        |   LIMITED     |    PLS_INTEGER |    SYNONYM* |
+|  ARRAY       |    ELSE*        |   LOCK*       |    POSITIVE    |    SYSDATE* |
+|  AS*         |   ELSIF         |  LONG*        |   POSITIVEN    |   TABLE* |
+|  ASC*        |    END          |   LOOP        |    PRAGMA      |    THEN* |
+|  AT          |    EXCEPTION    |   MAX         |    PRIOR*      |    TIME |
+|  AUTHID      |    EXCLUSIVE*   |   MIN         |    PRIVATE     |    TIMESTAMP |
+|  AVG          |   EXECUTE      |   MINUS*      |    PROCEDURE   |    TIMEZONE_ABBR |
+|  BEGIN        |   EXISTS*      |   MINUTE      |    PUBLIC*     |    TIMEZONE_HOUR |
+|  BETWEEN*     |   EXIT         |   MLSLABEL*   |   RAISE        |   TIMEZONE_MINUTE |
+|  BINARY_INTEGER | EXTENDS      |   MOD         |    RANGE       |    TIMEZONE_REGION |
+|  BODY          |  EXTRACT      |   MODE*       |    RAW*        |    TO* |
+|  BOOLEAN       |  FALSE        |   MONTH       |    REAL        |    TRIGGER* |
+|  BULK          |  FETCH        |   NATURAL     |    RECORD      |    TRUE |
+|  BY*           |  FLOAT*       |   NATURALN    |    REF         |    TYPE |
+|  CHAR*         |  FOR*         |   NEW         |    RELEASE     |    UI |
+|  CHAR_BASE     |  FORALL       |   NEXTVAL     |    RETURN      |    UNION* |
+|  CHECK*        |  FROM*        |   NOCOPY      |    REVERSE     |    UNIQUE* |
+|  CLOSE         |  FUNCTION     |   NOT*        |    ROLLBACK    |    UPDATE* |
+|  CLUSTER*      |  GOTO         |   NOWAIT*     |    ROW*        |    USE |
+|  COALESCE      |  GROUP*       |   NULL*       |    ROWID*      |    USER* |
+|  COLLECT       |  HAVING*      |   NULLIF      |    ROWNUM*     |    VALIDATE* |
+|  COMMENT*      |  HEAP         |   NUMBER*     |    ROWTYPE     |    VALUES* |
+|  COMMIT        |  HOUR         |   NUMBER_BASE |    SAVEPOINT   |    VARCHAR* |
+|  COMPRESS*     |  IF           |   OCIROWID    |    SECOND      |    VARCHAR2* |
+|  CONNECT*      |  IMMEDIATE*   |   OF*         |    SELECT*     |    VARIANCE |
+|  CONSTANT      |  IN*          |   ON*         |    SEPERATE    |    VIEW* |
+|  CREATE*       |  INDEX*       |   OPAQUE      |    SET*        |    WHEN |
+|  CURRENT*      |  INDICATOR    |   OPEN        |    SHARE*      |    WHENEVER* |
+|  CURRVAL       |  INSERT*      |   OPERATOR    |    SMALLINT*   |    WHERE*  |
+|  CURSOR        |  INTEGER*     |   OPTION*     |    SPACE       |    WHILE |
+|  DATE*         |  INTERFACE    |   OR*         |    SQL         |    WITH* |
+|  DAY           |  INTERSECT*   |   ORDER*      |    SQLCODE     |    WORK |
+|  DECIMAL*      |  INTERVAL     |   ORGANIZATION|    SQLERRM     |    WRITE |
+|  DECLARE       |  INTO*        |   OTHERS      |    START*      |    YEAR |
+|  DEFAULT*      |  IS*          |   OUT         |    STDDEV      |    ZONE |
+
+ 
