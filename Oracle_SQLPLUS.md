@@ -221,15 +221,15 @@ Enter Help [topic] for help.
 | **DEL**          | Deletes one or more lines of the SQL buffer. The buffer has no command history list and does not record SQL*Plus commands. |
 | **DESCRIBE**     | Lists the column definitions for a table, view, or synonym, or the specifications for a function or procedure. |
 | **DISCONNECT**   | Commits pending changes to the database and logs the current user out of Oracle, but does not exit SQL*Plus. In SQL*Plus command line, use EXIT or QUIT to log out of Oracle and return control to your computer's operating system. |
-| **EDIT**         | 
-| **EXECUTE**      | 
-| **EXIT**         | 
-| **GET**          | 
-| **HELP**         | 
-| **HISTORY**      | 
-| **HOST**         | 
-| **INPUT**        | 
-| **LIST**         |
+| **EDIT**         | Invokes an operating system text editor on the contents of the specified file or on the contents of the SQL buffer. The buffer has no command history list and does not record SQL*Plus commands. |
+| **EXECUTE**      | Executes a single PL/SQL statement or runs a stored procedure. |
+| **EXIT**         | Commits or rolls back all pending changes, logs out of Oracle, terminates SQL*Plus and returns control to the operating system. |
+| **GET**          | Loads a SQL statement or PL/SQL block from a script into the SQL buffer. The buffer has no command history list and does not record SQL*Plus commands. |
+| **HELP**         | Accesses this command line help system. Enter HELP INDEX or ? INDEX for a list of topics. |
+| **HISTORY**      | Stores, lists, executes, or edits commands entered during the current SQL*Plus session. |
+| **HOST**         | Executes an operating system command without leaving SQL*Plus. Enter HOST without command to display an operating system prompt. You can then enter multiple operating system commands. |
+| **INPUT**        |  Adds one or more new lines of text after the current line in the SQL buffer. The buffer has no command history list and does not record SQL*Plus commands. |
+| **LIST**         | Lists one or more lines of the most recently executed SQL command or PL/SQL block which is stored in the SQL buffer. Enter LIST with no clauses to list all lines. In SQL*Plus command-line you can also use ";" to list all the lines in the SQL buffer. The buffer has no command history list and does not record SQL*Plus commands. |
 | **PASSWORD**      |          
 | **PAUSE**           |        
 | **PRINT**             |      
