@@ -14,4 +14,12 @@ netbeans64 --jdkhome C:\app\zbook\product\jdk-21.0.6 --console new
 ```
 
 
-###
+## Java HowTo
+
+### Right or Left Pad a string with 0  or spaces
+
+```
+String.format("%10s", "foo").replace(' ', '*');
+String.format("%-10s", "bar").replace(' ', '*');
+String.format("%10s", "longer than 10 chars").replace(' ', '*');
+```
