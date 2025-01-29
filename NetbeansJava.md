@@ -9,7 +9,8 @@ Afterwards unzip the zip archive netbeans-24-bin.zip to a destination program fo
 If done, execute Netbeans using the following command line syntax:
 
 ```
-c:\app\zbook\product\netbeans\bin>netbeans64 --jdkhome C:\app\zbook\product\jdk-21.0.6 --console new
+cd c:\app\zbook\product\netbeans\bin
+netbeans64 --jdkhome C:\app\zbook\product\jdk-21.0.6 --console new
 ```
 
 
