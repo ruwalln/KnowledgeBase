@@ -30,3 +30,14 @@ int max_x = Arrays.stream(x)
    .max()
    .getAsInt();
 ```
+### StringBuilder add Spaces to a variable
+
+```
+// build an empty 225 char string
+
+      int numberOfSpaces = 200;
+      StringBuilder sb = new StringBuilder(numberOfSpaces);
+      for (int i = 0; i < numberOfSpaces; i++) {
+            sb.append(' ');
+      }
+```
