@@ -23,3 +23,10 @@ String.format("%10s", "foo").replace(' ', '*');
 String.format("%-10s", "bar").replace(' ', '*');
 String.format("%10s", "longer than 10 chars").replace(' ', '*');
 ```
+### scan a Number Array for max or min Value
+
+```
+int max_x = Arrays.stream(x)
+   .max()
+   .getAsInt();
+```
