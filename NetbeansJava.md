@@ -23,7 +23,7 @@ String.concat("Text");
 
 String names[]={"John","Peter","Mary","Duke"};
 for(int i: names){
- <code-block>;
+ <code-block>; // executes codeblock in a loop variable i for every element of array names.
 }
 ```
 
