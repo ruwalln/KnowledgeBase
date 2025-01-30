@@ -16,6 +16,15 @@ netbeans64 --jdkhome C:\app\zbook\product\jdk-21.0.6 --console new
 
 ## Java HowTo
 
+### useful Methods
+
+String.concat("Text");
+
+String names[]={"John","Peter","Mary","Duke"};
+for(String name: names){
+ <code-block>;
+}
+
 ### Right or Left Pad a string with 0  or spaces
 
 ```
@@ -35,9 +44,11 @@ int max_x = Arrays.stream(x)
 ```
 // build an empty 225 char string
 
-      int numberOfSpaces = 200;
+      int numberOfSpaces = 225;
       StringBuilder sb = new StringBuilder(numberOfSpaces);
       for (int i = 0; i < numberOfSpaces; i++) {
             sb.append(' ');
       }
 ```
+
+
