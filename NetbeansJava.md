@@ -18,12 +18,14 @@ netbeans64 --jdkhome C:\app\zbook\product\jdk-21.0.6 --console new
 
 ### useful Methods
 
+```
 String.concat("Text");
 
 String names[]={"John","Peter","Mary","Duke"};
-for(String name: names){
+for(int i: names){
  <code-block>;
 }
+```
 
 ### Right or Left Pad a string with 0  or spaces
 
