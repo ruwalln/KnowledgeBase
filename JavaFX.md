@@ -25,3 +25,11 @@ C:\app\zbook\product\jdk-21.0.6\bin\java.exe --module-path "C:\app\zbook\product
 ```
 C:\app\zbook\product\jdk-21.0.6\bin\javaw.exe --module-path "C:\app\zbook\product\javafx-sdk-21.0.5\lib" --add-modules javafx.controls,javafx.fxml,javafx.graphics -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 -classpath "C:\Users\zbook\eclipse-workspace\HelloJavaFX\src" -XX:+ShowCodeDetailsInExceptionMessages application.Main
 ```
+
+```
+// set classpath for execution of java program
+// to loa the jdbc environment for Oracle connection properly
+
+set CLASSPATH=C:\Users\zbook\OneDrive\Documents\work\Java\OracleJdbcSQL\ojdbc11.jar;C:\Users\zbook\OneDrive\Documents\work\Java\OracleJdbcSQL\build\classes
+C:\app\zbook\product\jdk-21.0.6\bin\java.exe application.OracleJdbcSQL
+```
