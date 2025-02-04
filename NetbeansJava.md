@@ -52,7 +52,7 @@ int max_x = Arrays.stream(x)
             sb.append(' ');
       }
 ```
-### Compare a String value of two String Arrays
+### Compare a String value of two String Arrays using String.equals
 
 ```
         for (x=0;x<val.length;x++){             
