@@ -52,5 +52,15 @@ int max_x = Arrays.stream(x)
             sb.append(' ');
       }
 ```
+### Compare a String value of two String Arrays
 
+```
+        for (x=0;x<val.length;x++){             
+            for(y=0;y<args.length;y++){
+                if(val[x].equals(args[y])){
+                    System.out.println(args[y]+" gefunden");
+                }                   
+            }       
+        }
+```
 
