@@ -64,7 +64,7 @@ int max_x = Arrays.stream(x)
         }
 ```
 
-### Save a Java TreeModel to Disk
+### Save a Java TreeModel to Disk (serializable)
 
 ```
 import javax.swing.tree.DefaultTreeModel;
@@ -99,7 +99,7 @@ public class TreeModelSaver {
 }
 ```
 
-### Load a Java TreeModel from Disk
+### Load a Java TreeModel from Disk (serializable)
 
 ```
 import javax.swing.tree.DefaultTreeModel;
