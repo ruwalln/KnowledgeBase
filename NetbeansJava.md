@@ -64,3 +64,68 @@ int max_x = Arrays.stream(x)
         }
 ```
 
+### Save a Java TreeModel to Disk
+
+```
+import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.DefaultMutableTreeNode;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.IOException;
+
+public class TreeModelSaver {
+
+    public static void saveTreeModel(DefaultTreeModel treeModel, String filePath) {
+        try (FileOutputStream fileOut = new FileOutputStream(filePath);
+             ObjectOutputStream out = new ObjectOutputStream(fileOut)) {
+            out.writeObject(treeModel);
+            System.out.println("TreeModel has been serialized to " + filePath);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void main(String[] args) {
+        // Example usage
+        DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root");
+        DefaultMutableTreeNode child1 = new DefaultMutableTreeNode("Child 1");
+        DefaultMutableTreeNode child2 = new DefaultMutableTreeNode("Child 2");
+        root.add(child1);
+        root.add(child2);
+
+        DefaultTreeModel treeModel = new DefaultTreeModel(root);
+        saveTreeModel(treeModel, "treeModel.ser");
+    }
+}
+```
+
+### Load a Java TreeModel from Disk
+
+```
+import javax.swing.tree.DefaultTreeModel;
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+import java.io.IOException;
+
+public class TreeModelLoader {
+
+    public static DefaultTreeModel loadTreeModel(String filePath) {
+        DefaultTreeModel treeModel = null;
+        try (FileInputStream fileIn = new FileInputStream(filePath);
+             ObjectInputStream in = new ObjectInputStream(fileIn)) {
+            treeModel = (DefaultTreeModel) in.readObject();
+            System.out.println("TreeModel has been deserialized from " + filePath);
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return treeModel;
+    }
+
+    public static void main(String[] args) {
+        // Example usage
+        DefaultTreeModel treeModel = loadTreeModel("treeModel.ser");
+        // Use the treeModel as needed
+    }
+}
+
+```
