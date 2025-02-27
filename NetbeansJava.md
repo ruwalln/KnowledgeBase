@@ -129,3 +129,22 @@ public class TreeModelLoader {
 }
 
 ```
+
+### Scroll thru a complete JTree Model visit all available nodes
+
+```
+public static void visitAllNodes(JTree tree) {
+        TreeNode root = (TreeNode) tree.getModel().getRoot();
+        visitAllNodes(root);
+    }
+
+    public static void visitAllNodes(TreeNode node) {
+        System.out.println(node);
+        if (node.getChildCount() >= 0) {
+            for (Enumeration e = node.children(); e.hasMoreElements();) {
+                TreeNode n = (TreeNode) e.nextElement();
+                visitAllNodes(n);
+            }
+        }
+    }
+```
