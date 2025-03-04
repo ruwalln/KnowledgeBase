@@ -18,10 +18,27 @@ In the Page Designer define a "Dynamic Action" -> DialogClosed <- to Check a For
 In the Properties define the following values :
 | Dynamic Action | Properties |
 | -------------- | ---------- |
-| ![image](https://github.com/user-attachments/assets/79a74a71-c858-41b9-82b8-a8903e46108d)| ![image](https://github.com/user-attachments/assets/90572755-5f9a-4627-9d4f-59b25a481410) | 
-| ---------------------------------------------------------------------------------------  | ----------------------------------------------------------------------------------------  |
+| ![image](https://github.com/user-attachments/assets/79a74a71-c858-41b9-82b8-a8903e46108d) | ![image](https://github.com/user-attachments/assets/90572755-5f9a-4627-9d4f-59b25a481410) | 
+|   |  |
 
+In the "True" Section define the following JavaScript Segment:
 
+```
+	// make sure it is the dialog we are expecting that closed
+	if ( this.data.dialogPageId  === 6 ) {
+		if ( this.data.successMessage ) {
+			// use this API to show the success message if any that came from the dialog
+			apex.message.showPageSuccess(this.data.successMessage.text);
+		}
+		// refresh the region to pick up any changes made by the dialog that just closed
+        // emp ist hier die Statische ID des Interactive Grids 
+        
+		apex.region("AlternateRowIG").widget().interactiveGrid("getActions").invoke("selection-refresh");
+        
+        // apex.region ("emp").widget ().interactiveGrid ("getActions").invoke ("selection-refresh")
+        // apex.region("emp").widget().interactiveGrid("getActions").invoke("save");
+	}
+```
 
 Here is a list of actions that can be invoke from APEX using JavaScript programming.
 
