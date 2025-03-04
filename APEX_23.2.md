@@ -220,4 +220,19 @@ apex.items.P100_TEXTFELD03.setFocus();
 
 // ======================================================
 
+// if the value of item P100_TEXTFIELD2 greater than 3000
+// then setStyle backgound color to red and display a
+// alert message - afterwards set the value to 3000
+
+if(Number(apex.items.P100_TEXTFELD02.getValue()>3000)){
+  apex.items.P100_TEXTFELD02.setStyle("background","rgb(255, 0, 0)")
+  apex.message.alert("P100_TEXTFELD02 darf max. 3000 betragen.")
+  apex.items.P100_TEXTFELD02.setValue("3000")
+}
+
+// in the lostFocus dynamic action reset the background if the value is corrent
+
+apex.items.P100_TEXTFELD02.setStyle("Background","rgb(246,246,246)")
+
+
 ```
