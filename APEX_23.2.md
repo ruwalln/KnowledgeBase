@@ -236,3 +236,11 @@ apex.items.P100_TEXTFELD02.setStyle("Background","rgb(246,246,246)")
 
 
 ```
+### HowTo using JavaScript to calculate with different field values on a page.
+
+```
+apex.items.P100_TEXTFELD02.show();
+var summe = Number(apex.items.P100_TEXTFELD01.getValue()) + Number(apex.items.P100_TEXTFELD02.getValue());
+apex.items.P100_TEXTFELD02.setValue(summe);
+apex.items.P100_TEXTFELD02.setFocus();
+```
