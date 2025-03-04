@@ -13,8 +13,6 @@ Requirements:
 The updated region must be a single selected row which has an unique static ID like "AlternateRowIG". In this case its a row using an alternative coloring by JavaScript.
 In the Page Designer define a "Dynamic Action" -> DialogClosed <- to Check a Form has been Closed after updating a specific row.
 
-
-
 In the Properties define the following values :
 | Dynamic Action | Properties |
 | -------------- | ---------- |
@@ -199,5 +197,27 @@ Here you can see the single CSS script lines todo the whole job.
   box-shadow: inset 1px 1px 2px 0px #E2E2E2;
   border-radius: 8px;    
 }
+
+```
+
+### HowTo use JavaScript to dynamically compute and change the behavier of page items.
+
+You can use JavaScript to change dynamically the behavier and compute values or hide,enable or disable items in a page.
+
+Here are some code examples todo the job. In the "execute JavaScript Code" Section define codes segments written in JavaScript.
+
+```
+// ====================================================== 
+// if item named P100_TEXTFELD01 is disabled==false then
+// disable it. Set Focus to item P100_TEXTFELD03
+// ======================================================
+
+if (apex.items.P100_TEXTFELD01.disable()==false){
+   apex.items.P100_TEXTFELD01.disable(); 
+}
+
+apex.items.P100_TEXTFELD03.setFocus();
+
+// ======================================================
 
 ```
