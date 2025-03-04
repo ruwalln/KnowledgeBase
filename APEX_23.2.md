@@ -8,6 +8,21 @@ You are able to refresh a selected row after update data in a single form after 
 
 apex.region("region-id").widget.interactive_grid("get-actions").invoke("action-name");
 
+Requirements: 
+
+The updated region must be a single selected row which has an unique static ID like "AlternateRowIG". In this case its a row using an alternative coloring by JavaScript.
+In the Page Designer define a "Dynamic Action" -> DialogClosed <- to Check a Form has been Closed after updating a specific row.
+
+
+
+In the Properties define the following values :
+| Dynamic Action | Properties |
+| -------------- | ---------- |
+| ![image](https://github.com/user-attachments/assets/79a74a71-c858-41b9-82b8-a8903e46108d)| ![image](https://github.com/user-attachments/assets/90572755-5f9a-4627-9d4f-59b25a481410) | 
+| ---------------------------------------------------------------------------------------  | ----------------------------------------------------------------------------------------  |
+
+
+
 Here is a list of actions that can be invoke from APEX using JavaScript programming.
 
 | Name	                                 | Type	        | Description |
