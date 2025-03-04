@@ -90,6 +90,32 @@ Here is a list of actions that can be invoke from APEX using JavaScript programm
 
 ### using Theme Roller and User Custom CSS for the application
 
+Using the Custom User CSS you are able to customize form items in your application. For example using big 24 letters in a field using a single CSS line of information.
+
+![image](https://github.com/user-attachments/assets/3821b87d-a789-4cf7-a6bc-b3e80a91f6c1)
+
+Using this line of CSS in the CSS-Class Section of the TextField Item.
+
+big-24-input
+
+![image](https://github.com/user-attachments/assets/e7904def-75dd-4f74-b4ce-014adaed6c79)
+
+Here you can see the single CSS script lines todo the whole job.
+
+```
+.big24-input {
+  background-color: rgb(250, 249, 249);
+  color: rgb(2, 2, 2);
+  height: 85px;
+  font-size: 45px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  box-shadow: inset 1px 1px 2px 0px #E2E2E2;
+  border-radius: 8px;    
+}
+```
+
+
+
 ```
 /* Custom CSS for Rounded Buttons */
 .rounded-button {
