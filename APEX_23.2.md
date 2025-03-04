@@ -2,9 +2,9 @@
 
 ## JavaScript programming Form execution
 
-### APEX update ROW after updating Data in a Form without reloading
+### APEX update a selected ROW in InteractiveGrid after updating Data in a Form without reloading
 
-You are able to refresh a selected row after update data in a single form after closing the form. Normally the data would not be updated automatically without a refresh of the whole classic grid form. Therefor you are able to use JavaScript to do the whole job. Here is an example how to  use the JavaScript funtions. The Functions belong to :
+You are able to refresh a selected row after update data in a single form after closing the form. Normally the data would not be updated automatically without a refresh of the whole classic grid form. Therefor you are able to use JavaScript to do the whole job. Here is an example how to  use the JavaScript funtions. The Functions belongs to :
 
 apex.region("region-id").widget.interactive_grid("get-actions").invoke("action-name");
 
@@ -86,3 +86,92 @@ Here is a list of actions that can be invoke from APEX using JavaScript programm
 | save	| Action	| Save the current data changes. Note: Interactive Grid must be editable.| 
 | single-row-view	| Action	| Change to single row view. Note: The current view must support single row view.| 
 | close-single-row-view	| Action	| Change from single row view. Note: The current view must support single row view.| 
+
+
+### using Theme Roller and User Custom CSS for the application
+
+```
+/* Custom CSS for Rounded Buttons */
+.rounded-button {
+    border-radius: 5px; /* Adjust the value for more or less rounding */
+    padding: 15px 30px; /* Adjust padding for desired button size */
+    background-color: rgb(235, 235, 235); /* Button background color */
+    color: rgb(0, 0, 0); /* Button text color */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.rounded-button:hover {
+    background-color: rgb(0, 0, 0);/* Darker shade on hover */
+    color: rgb(255, 255, 255);
+}
+
+/* Custom Input Textarea Fields */
+
+.rounded-textarea {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: inset 1px 1px 2px 0px #E2E2E2;
+  background-color: rgb(248, 248, 246);
+  border-radius: 8px;
+  //border-width: 1px;
+  border-color: rgb(240, 237, 237);
+}
+
+.rounded-textarea:focus {
+  box-shadow: inset 1px 1px 2px 0px #E2E2E2;
+  background-color: rgb(253, 253, 253);
+  border-radius: 8px;
+  //border-width: 1px;
+  //border-color: rgb(202, 201, 204);
+}
+
+.rounded-textarea:hover {
+  box-shadow: inset 1px 1px 2px 0px #E2E2E2;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  //border-width: 1px;
+  //border-color: rgb(202, 201, 204);
+}
+
+.rounded-input[type=text]:focus {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(255, 254, 254);
+  border-radius: 8px;
+}
+
+.rounded-input[type=text] {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  box-shadow: inset 1px 1px 2px 0px #E2E2E2;
+  border-radius: 8px;
+}
+
+.rounded-selectlist:focus {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(255, 254, 254);
+  border-radius: 8px;
+}
+
+.rounded-selectlist {
+  height: 53px;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  box-shadow: inset 1px 1px 2px 0px #E2E2E2;
+  border-radius: 8px;    
+}
+
+.big24-input {
+  background-color: rgb(250, 249, 249);
+  color: rgb(2, 2, 2);
+  height: 85px;
+  font-size: 45px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  box-shadow: inset 1px 1px 2px 0px #E2E2E2;
+  border-radius: 8px;    
+}
+
+```
