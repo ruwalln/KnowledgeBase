@@ -138,6 +138,112 @@ SQL> show pdbs
          3 XEPDB1                         READ WRITE NO
 ```
 
+## Oracle Database Backup using RMAN
+
+### Backup Database in NOARCHIVELOG Mode
+
+To backup an Oracle Database in NOARCHIVELOG Mode execute the following steps.
+Make sure to set 
+ORACLE_SID=XE and 
+ORACLE_HOME=C:\app\zbook\product\21c\dbhomeXE to to the current CDB$ROOT Container name and include ORACLE_HOME/bin to PATH variable.
+Afterwards you are able to execute the following steps.
+
+
+```
+C:\app\zbook\product\21c\dbhomeXE\bin>rman
+
+Recovery Manager: Release 21.0.0.0.0 - Production on Mi Mrz 19 15:02:32 2025
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
+
+RMAN> connect target "/ as sysdba"
+
+mit Zieldatenbank verbunden (nicht gestartet)
+
+RMAN> startup force dba;
+
+Oracle-Instanz gestartet
+Datenbank angeschlossen
+Datenbank ge├Âffnet
+
+Gesamte System Global Area    1610609432 Byte
+
+Fixed Size                     9855768 Byte
+Variable Size               1023410176 Byte
+Database Buffers             570425344 Byte
+Redo Buffers                   6918144 Byte
+
+RMAN> shutdown immediate;
+
+Kontrolldatei der Zieldatenbank wird anstelle des Recovery-Katalogs verwendet
+Datenbank geschlossen
+Datenbank nicht angeschlossen
+Oracle-Instanz heruntergefahren
+
+RMAN> startup mount
+
+mit Zieldatenbank verbunden (nicht gestartet)
+Oracle-Instanz gestartet
+Datenbank angeschlossen
+
+Gesamte System Global Area    1610609432 Byte
+
+Fixed Size                     9855768 Byte
+Variable Size               1023410176 Byte
+Database Buffers             570425344 Byte
+Redo Buffers                   6918144 Byte
+
+RMAN> backup
+2> device type disk
+3> database;
+
+backup wird gestartet bei 19.03.25
+Zugewiesener Kanal: ORA_DISK_1
+Kanal ORA_DISK_1: SID=621, Ger├ñtetyp=DISK
+Kanal ORA_DISK_1: Vollst├ñndiges Backup Set f├╝r Datendatei wird begonnen
+Kanal ORA_DISK_1: Datendateien in Backup Set werden angegeben
+Dateinummer der Eingabedate=00001, Name=C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\SYSTEM01.DBF
+Dateinummer der Eingabedate=00003, Name=C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\SYSAUX01.DBF
+Dateinummer der Eingabedate=00004, Name=C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\UNDOTBS01.DBF
+Dateinummer der Eingabedate=00007, Name=C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\USERS01.DBF
+Kanal ORA_DISK_1: Piece 1 wird auf 19.03.25 begonnen
+Kanal ORA_DISK_1: Piece 1 auf 19.03.25 beendet
+Piece Handle=C:\APP\ZBOOK\PRODUCT\21C\DBHOMEXE\DATABASE\013KOCH6_1_1_1, Tag=TAG20250319T150509, Kommentar=NONE
+Kanal ORA_DISK_1: Backupset abgeschlossen, abgelaufene Zeit: 00:00:07
+Kanal ORA_DISK_1: Vollst├ñndiges Backup Set f├╝r Datendatei wird begonnen
+Kanal ORA_DISK_1: Datendateien in Backup Set werden angegeben
+Dateinummer der Eingabedate=00010, Name=C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\XEPDB1\SYSAUX01.DBF
+Dateinummer der Eingabedate=00013, Name=C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\XEPDB1\APEX01.DBF
+Dateinummer der Eingabedate=00009, Name=C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\XEPDB1\SYSTEM01.DBF
+Dateinummer der Eingabedate=00011, Name=C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\XEPDB1\UNDOTBS01.DBF
+Dateinummer der Eingabedate=00015, Name=C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\XEPDB1\APEX_12176058083270037.DBF
+Dateinummer der Eingabedate=00012, Name=C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\XEPDB1\USERS01.DBF
+Dateinummer der Eingabedate=00014, Name=C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\XEPDB1\APEX_4800437602748884.DBF
+Kanal ORA_DISK_1: Piece 1 wird auf 19.03.25 begonnen
+Kanal ORA_DISK_1: Piece 1 auf 19.03.25 beendet
+Piece Handle=C:\APP\ZBOOK\PRODUCT\21C\DBHOMEXE\DATABASE\023KOCHD_2_1_1, Tag=TAG20250319T150509, Kommentar=NONE
+Kanal ORA_DISK_1: Backupset abgeschlossen, abgelaufene Zeit: 00:00:07
+Kanal ORA_DISK_1: Vollst├ñndiges Backup Set f├╝r Datendatei wird begonnen
+Kanal ORA_DISK_1: Datendateien in Backup Set werden angegeben
+Dateinummer der Eingabedate=00006, Name=C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\PDBSEED\SYSAUX01.DBF
+Dateinummer der Eingabedate=00005, Name=C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\PDBSEED\SYSTEM01.DBF
+Dateinummer der Eingabedate=00008, Name=C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\PDBSEED\UNDOTBS01.DBF
+Kanal ORA_DISK_1: Piece 1 wird auf 19.03.25 begonnen
+Kanal ORA_DISK_1: Piece 1 auf 19.03.25 beendet
+Piece Handle=C:\APP\ZBOOK\PRODUCT\21C\DBHOMEXE\DATABASE\033KOCHK_3_1_1, Tag=TAG20250319T150509, Kommentar=NONE
+Kanal ORA_DISK_1: Backupset abgeschlossen, abgelaufene Zeit: 00:00:03
+backup wurde beendet bei 19.03.25
+
+Control File and SPFILE Autobackup wird gestartet bei 19.03.25
+Piece Handle=C:\APP\ZBOOK\PRODUCT\21C\DBHOMEXE\DATABASE\C-3065698935-20250319-00, Kommentar=NONE
+Control File and SPFILE Autobackup wurde beendet bei 19.03.25
+
+RMAN> alter database open;
+
+Anweisung verarbeitet
+```
+
 
 ## Scripts Section - Using Dynamic Performance View
 
