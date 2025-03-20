@@ -243,6 +243,97 @@ RMAN> alter database open;
 
 Anweisung verarbeitet
 ```
+### Restore Oracle Database in NOARCHIVELOG Mode using RMAN
+
+To Restore an Oracle Database running in NOARCHIVELOG Mode please execute the following steps.
+
+- set ORACLE_SID=XE
+- starting RMAN
+- connect to target using RMAN
+- startup mount
+- restore database
+- perform media recovery if needed
+- open database in openresetlogs
+  
+```
+RMAN> connect target "/ as sysdba"
+
+mit Zieldatenbank verbunden (nicht gestartet)
+
+RMAN> startup mount;
+
+Oracle-Instanz gestartet
+Datenbank angeschlossen
+
+Gesamte System Global Area    1610609432 Byte
+
+Fixed Size                     9855768 Byte
+Variable Size               1023410176 Byte
+Database Buffers             570425344 Byte
+Redo Buffers                   6918144 Byte
+
+RMAN> restore database
+2> ;
+
+restore wird gestartet bei 20.03.25
+Zugewiesener Kanal: ORA_DISK_1
+Kanal ORA_DISK_1: SID=621, Ger├ñtetyp=DISK
+
+Datendatei 5 wird ├╝bersprungen, sie ist bereits in Datei C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\PDBSEED\SYSTEM01.DBF wiederhergestellt
+Datendatei 6 wird ├╝bersprungen, sie ist bereits in Datei C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\PDBSEED\SYSAUX01.DBF wiederhergestellt
+Datendatei 8 wird ├╝bersprungen, sie ist bereits in Datei C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\PDBSEED\UNDOTBS01.DBF wiederhergestellt
+Kanal ORA_DISK_1: Zur├╝ckschreiben von Datendatei-Backup Set beginnt
+Kanal ORA_DISK_1: Datendatei(en) werden zum Wiederherstellen aus Backup Set angegeben
+Kanal ORA_DISK_1: Datendatei 00001 wird auf C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\SYSTEM01.DBF wiederhergestellt
+Kanal ORA_DISK_1: Datendatei 00003 wird auf C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\SYSAUX01.DBF wiederhergestellt
+Kanal ORA_DISK_1: Datendatei 00004 wird auf C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\UNDOTBS01.DBF wiederhergestellt
+Kanal ORA_DISK_1: Datendatei 00007 wird auf C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\USERS01.DBF wiederhergestellt
+Kanal ORA_DISK_1: Lesen aus Backuppiece C:\APP\ZBOOK\PRODUCT\21C\DBHOMEXE\DATABASE\013KOCH6_1_1_1
+Kanal ORA_DISK_1: Piece Handle=C:\APP\ZBOOK\PRODUCT\21C\DBHOMEXE\DATABASE\013KOCH6_1_1_1, Tag=TAG20250319T150509
+Kanal ORA_DISK_1: Backuppiece 1 wurde wiederhergestellt
+Kanal ORA_DISK_1: Wiederherstellung abgeschlossen, abgelaufene Zeit: 00:00:03
+Kanal ORA_DISK_1: Zur├╝ckschreiben von Datendatei-Backup Set beginnt
+Kanal ORA_DISK_1: Datendatei(en) werden zum Wiederherstellen aus Backup Set angegeben
+Kanal ORA_DISK_1: Datendatei 00009 wird auf C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\XEPDB1\SYSTEM01.DBF wiederhergestellt
+Kanal ORA_DISK_1: Datendatei 00010 wird auf C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\XEPDB1\SYSAUX01.DBF wiederhergestellt
+Kanal ORA_DISK_1: Datendatei 00011 wird auf C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\XEPDB1\UNDOTBS01.DBF wiederhergestellt
+Kanal ORA_DISK_1: Datendatei 00012 wird auf C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\XEPDB1\USERS01.DBF wiederhergestellt
+Kanal ORA_DISK_1: Datendatei 00013 wird auf C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\XEPDB1\APEX01.DBF wiederhergestellt
+Kanal ORA_DISK_1: Datendatei 00014 wird auf C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\XEPDB1\APEX_4800437602748884.DBF wiederhergestellt
+Kanal ORA_DISK_1: Datendatei 00015 wird auf C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\XEPDB1\APEX_12176058083270037.DBF wiederhergestellt
+Kanal ORA_DISK_1: Lesen aus Backuppiece C:\APP\ZBOOK\PRODUCT\21C\DBHOMEXE\DATABASE\023KOCHD_2_1_1
+Kanal ORA_DISK_1: Piece Handle=C:\APP\ZBOOK\PRODUCT\21C\DBHOMEXE\DATABASE\023KOCHD_2_1_1, Tag=TAG20250319T150509
+Kanal ORA_DISK_1: Backuppiece 1 wurde wiederhergestellt
+Kanal ORA_DISK_1: Wiederherstellung abgeschlossen, abgelaufene Zeit: 00:00:03
+restore wurde beendet bei 20.03.25
+
+RMAN> alter database open;
+
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+RMAN-03002: Fehler bei Befehl sql statement bei 03/20/2025 13:15:15
+ORA-01113: F├╝r Datei '1' ist Media Recovery erforderlich
+ORA-01110: Datendatei 1: 'C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\SYSTEM01.DBF'
+
+RMAN> recover database;
+
+recover wird gestartet bei 20.03.25
+Kanal ORA_DISK_1 wird verwendet
+
+Media Recovery starten
+
+Archiviertes Log f├╝r Thread 1 mit Sequence 51 bereits auf Datentr├ñger als Datei C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\REDO03.LOG vorhanden
+Dateiname des archivierten Logs=C:\APP\ZBOOK\PRODUCT\21C\ORADATA\XE\REDO03.LOG, Thread=1, Sequence=51
+Media Recovery abgeschlossen, abgelaufene Zeit: 00:00:02
+recover wurde beendet bei 20.03.25
+
+RMAN> alter database open resetlogs;
+
+Anweisung verarbeitet
+```
+
+
 
 
 ## Scripts Section - Using Dynamic Performance View
