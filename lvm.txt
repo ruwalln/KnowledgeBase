@@ -1,0 +1,299 @@
+#
+# VirtualBox Shared Folder
+#
+
+mount -t vboxfs Install /mnt
+
+# -------------------------------------------
+# => ORACLE LINUX 8 - LVM Disk Configuration
+# -------------------------------------------
+
+# 
+# => Command List Overview
+#
+
+lsblk - Informationen zu blockorientierten Geräten ausgeben.
+
+pvs - Display information about physical volumes
+pvdisplay - Display various attributes of physical volume(s)
+pvscan - List all physical volumes
+pvcreate - Initialize physical volume(s) for use by LVM
+pvchange - Change attributes of physical volume(s)
+pvremove - Remove LVM label(s) from physical volume(s)
+pvmove - Move extents from one physical volume to another
+pvresize - Resize physical volume(s)
+pvck - Check metadata on physical volumes
+
+vgs - Display information about volume groups
+vgdisplay - Display volume group information
+vgscan - Search for all volume groups
+vgcreate - Create a volume group using a physical volume
+vgextend - Add physical volumes to a volume group
+vgremove - Remove volume group(s)
+vgreduce - Remove physical volume(s) from a volume group
+
+vgchange - Change volume group attributes
+vgck - Check the consistency of volume group(s)
+vgexport - Unregister volume group(s) from the system
+vgimport - Register exported volume group with system
+vgmerge - Merge volume groups
+vgrename - Rename a volume group
+vgsplit - Move physical volumes into a new or existing volume group
+
+lvm - logical volume manager config (** all commands)
+lvs - Display information about logical volumes
+lvdisplay - Display information about a logical volume
+lvscan - List all logical volumes in all volume groups
+lvchange
+lvconvert
+lvmdiskscan
+lvmsadc
+lvmsar
+lvrename
+lvresize
+
+# lvm configuration file see
+
+cat /etc/lvm/lvm.conf auto_activation_volume_list parameter
+
+# -----------------------------------
+# => create a physical Volume on Disk
+# -----------------------------------
+
+# pvs - Display information about physical volumes
+# use pvs, pvdisplay, pvscan to display informations about physical volumes
+# use pvcreate, pvremove, pvchange, pvmove, pvresize, pvck
+
+[root@oracle8linux1 ~]# pvcreate -v /dev/sdb
+
+[root@oracle8linux1 ~]# pvs
+  PV         VG  Fmt  Attr PSize   PFree
+  /dev/sda2  ol  lvm2 a--  <18,53g    0 
+  /dev/sdc   u01 lvm2 a--   <1,95g 8,00m
+  /dev/sdd   u02 lvm2 a--   <1,95g 8,00m
+  /dev/sde   u03 lvm2 a--   <1,95g 8,00m
+  /dev/sdf   u04 lvm2 a--   <1,95g 8,00m
+  /dev/sdg   u05 lvm2 a--   <1,95g 8,00m
+
+pvs
+pvcreate -v /dev/sdb
+
+# -----------------------------------
+# => create a logical Volume Group
+# -----------------------------------
+
+lsblk
+vgcreate -v dbfree /dev/sdb
+mount /dev/sdb1 /opt
+
+fdisk -l /dev/sda
+fdisk -l /dev/sdb
+
+# --------------------------------------------------
+# => configure and mount new filesystems in fstab
+# --------------------------------------------------
+
+vi /etc/fstab
+
+```
+cat /etc/fstab
+
+/dev/sdb1		/opt			xfs	defaults	0 0
+/dev/mapper/u01-d01	/opt/oracle/oradata/u01 xfs	defaults	0 0
+/dev/mapper/u02-d01	/opt/oracle/oradata/u02 xfs	defaults	0 0
+/dev/mapper/u03-d01	/opt/oracle/oradata/u03 xfs	defaults	0 0
+/dev/mapper/u04-d01	/opt/oracle/oradata/u04 xfs	defaults	0 0
+/dev/mapper/u05-d01	/opt/oracle/oradata/u05 xfs 	defaults	0 0
+
+# edit /etc/fstab to add newly created filesystems 
+
+vi /etc/fstab
+
+# reload all service files and update its internal configuration.
+
+systemctl deamon-reload
+
+# check using df -h for successfully added 
+
+[root@oracle8linux1 ~]# df -h
+Dateisystem         Größe Benutzt Verf. Verw% Eingehängt auf
+devtmpfs             3,8G       0  3,8G    0% /dev
+tmpfs                3,8G    1,1M  3,8G    1% /dev/shm
+tmpfs                3,8G    9,4M  3,8G    1% /run
+tmpfs                3,8G       0  3,8G    0% /sys/fs/cgroup
+/dev/mapper/ol-root   17G    8,3G  8,4G   50% /
+/dev/sdb1            9,8G    7,7G  2,2G   79% /opt
+/dev/sda1           1014M    520M  495M   52% /boot
+/dev/mapper/u05-d01  2,0G     47M  1,9G    3% /opt/oracle/oradata/u05
+/dev/mapper/u03-d01  2,0G     47M  1,9G    3% /opt/oracle/oradata/u03
+/dev/mapper/u02-d01  2,0G     47M  1,9G    3% /opt/oracle/oradata/u02
+/dev/mapper/u01-d01  2,0G     47M  1,9G    3% /opt/oracle/oradata/u01
+/dev/mapper/u04-d01  2,0G     47M  1,9G    3% /opt/oracle/oradata/u04
+tmpfs                766M       0  766M    0% /run/user/54321
+tmpfs                766M     68K  766M    1% /run/user/1000
+/dev/sr0              59M     59M     0  100% /run/media/zbook/VBox_GAs_7.1.8
+
+# ------------------------------------
+# => install oracle database free 23ai
+# ------------------------------------
+
+su - root
+dnf install -y oracle-database-preinstall-23ai
+dnf -y localinstall oracle-database-free-23ai-23.8-1.el8.x86_64.rpm
+
+# start/stop script configuration Oracle Database 23ai
+
+su - oracle
+cd ~
+cd /home/oracle
+
+export DB_PASSWORD=*********
+(echo "${DB_PASSWORD}"; echo "${DB_PASSWORD}";) | /etc/init.d/oracle-free-23ai configure
+
+./stopOracleService.sh
+./startOracleService.sh
+
+# configure automatically start and stop the oracle 23ai instance on poweron and shutdown
+
+systemctl enable oracle-free-23ai && systemctl start oracle-free-23ai
+
+# ------------------------
+# => configure X11 Server
+# ------------------------
+
+# dependencies of X11 on server
+
+yum install xorg-x11-xauth
+dnf install openssh openssh-server
+systemctl start sshd
+systemctl enable sshd
+firewall-cmd -permanent --add-port=22/sctp
+
+cd /etc/ssh
+vi sshd_config
+change 
+	AllowTcpForwarding yes
+	X11Forwarding yes
+systemctl daemon_reload
+systemctl restart sshd.service
+
+dnf install xorg-x11-xauth xorg-x11-fonts-\* xorg-x11-utils dbus-x11
+systemctl restart sshd.service
+dnf config-manager --enable ol8_codeready_builder
+dnf install xorg-x11-apps
+
+check using xclock and xeyes applications
+
+su - root
+xauth list $DISPLAY
+oracle8linux1.localdomain/unix:  MIT-MAGIC-COOKIE-1  731f4bc2114420b228cb6a2ec58e2c54 <-- use this hex key for authorization
+
+echo $DISPLAY
+:0
+
+su - oracle
+DISPLAY=:0; export DISPLAY
+xauth add $DISPLAY . 731f4bc2114420b228cb6a2ec58e2c54
+
+xclock # all done
+
+[root@oracle8linux1 ~]# yum list xorg*
+Letzte Prüfung auf abgelaufene Metadaten: vor 1:02:26 am Fr 01 Aug 2025 04:54:37 EDT.
+Installierte Pakete
+xorg-x11-apps.x86_64                                           7.7-21.el8                                      @ol8_codeready_builder
+xorg-x11-drv-ati.x86_64                                        19.1.0-1.el8                                    @AppStream            
+xorg-x11-drv-evdev.x86_64                                      2.10.6-2.el8                                    @AppStream            
+xorg-x11-drv-fbdev.x86_64                                      0.5.0-2.el8                                     @AppStream            
+xorg-x11-drv-intel.x86_64                                      2.99.917-41.20210115.el8                        @AppStream            
+xorg-x11-drv-libinput.x86_64                                   0.29.0-1.el8                                    @AppStream            
+xorg-x11-drv-nouveau.x86_64                                    1:1.0.15-4.el8.1                                @AppStream            
+xorg-x11-drv-qxl.x86_64                                        0.1.5-11.el8                                    @AppStream            
+xorg-x11-drv-vesa.x86_64                                       2.4.0-3.el8                                     @AppStream            
+xorg-x11-drv-vmware.x86_64                                     13.2.1-8.el8                                    @AppStream            
+xorg-x11-drv-wacom.x86_64                                      0.38.0-1.el8                                    @AppStream            
+xorg-x11-drv-wacom-serial-support.x86_64                       0.38.0-1.el8                                    @AppStream            
+xorg-x11-font-utils.x86_64                                     1:7.5-41.el8                                    @AppStream            
+xorg-x11-fonts-100dpi.noarch                                   7.5-19.el8                                      @ol8_appstream        
+xorg-x11-fonts-75dpi.noarch                                    7.5-19.el8                                      @ol8_appstream        
+xorg-x11-fonts-ISO8859-1-100dpi.noarch                         7.5-19.el8                                      @ol8_appstream        
+xorg-x11-fonts-ISO8859-1-75dpi.noarch                          7.5-19.el8                                      @ol8_appstream        
+xorg-x11-fonts-ISO8859-14-100dpi.noarch                        7.5-19.el8                                      @ol8_appstream        
+xorg-x11-fonts-ISO8859-14-75dpi.noarch                         7.5-19.el8                                      @ol8_appstream        
+xorg-x11-fonts-ISO8859-15-100dpi.noarch                        7.5-19.el8                                      @ol8_appstream        
+xorg-x11-fonts-ISO8859-15-75dpi.noarch                         7.5-19.el8                                      @ol8_appstream        
+xorg-x11-fonts-ISO8859-2-100dpi.noarch                         7.5-19.el8                                      @ol8_appstream        
+xorg-x11-fonts-ISO8859-2-75dpi.noarch                          7.5-19.el8                                      @ol8_appstream        
+xorg-x11-fonts-ISO8859-9-100dpi.noarch                         7.5-19.el8                                      @ol8_appstream        
+xorg-x11-fonts-ISO8859-9-75dpi.noarch                          7.5-19.el8                                      @ol8_appstream        
+xorg-x11-fonts-Type1.noarch                                    7.5-19.el8                                      @ol8_appstream        
+xorg-x11-fonts-cyrillic.noarch                                 7.5-19.el8                                      @ol8_appstream        
+xorg-x11-fonts-ethiopic.noarch                                 7.5-19.el8                                      @ol8_appstream        
+xorg-x11-fonts-misc.noarch                                     7.5-19.el8                                      @ol8_appstream        
+xorg-x11-server-Xorg.x86_64                                    1.20.11-26.el8_10                               @ol8_appstream        
+xorg-x11-server-Xwayland.x86_64                                21.1.3-18.el8_10                                @ol8_appstream        
+xorg-x11-server-common.x86_64                                  1.20.11-26.el8_10                               @ol8_appstream        
+xorg-x11-server-utils.x86_64                                   7.7-27.el8                                      @AppStream            
+xorg-x11-utils.x86_64                                          7.5-28.el8                                      @AppStream            
+xorg-x11-xauth.x86_64                                          1:1.0.9-12.el8                                  @AppStream            
+xorg-x11-xbitmaps.noarch                                       1.1.1-13.el8                                    @ol8_appstream        
+xorg-x11-xinit.x86_64                                          1.3.4-18.el8                                    @AppStream            
+xorg-x11-xinit-session.x86_64                                  1.3.4-18.el8                                    @AppStream            
+xorg-x11-xkb-utils.x86_64                                      7.7-28.el8                                      @AppStream            
+
+# ===================================
+# => install Oracle SQL Developer 
+# ===================================
+
+using root user for all installations
+
+# install JDK17 first
+
+URL : https://www.oracle.com/java/technologies/downloads/#java17
+
+# install rpm using
+
+rpm -ivh jdk-17.0.16_linux-x64_bin.rpm
+
+# install sqldeveloper
+
+rpm -ivh jdk-17.0.16_linux-x64_bin.rpm
+
+# running sqldeveloper for all users
+
+sqldeveloper [enter]
+
+# ===========================
+# Install Microsoft VsCode
+# ===========================
+
+# import microsoft repository to local repository
+
+rpm --import https://packages.microsoft.com/keys/microsoft.asc
+echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | tee /etc/yum.repos.d/vscode.repo > /dev/null
+
+# dnf check for updates
+
+dnf check-update
+
+# install vscode
+
+dnf install code
+
+# start vscode from terminal shell / bash
+
+as root (not recommended)
+
+code --no-sandbox --user-data-dir /home/zbook/Documents
+
+as normal user
+
+code
+
+
+
+
+
+
+
+
+
