@@ -53,21 +53,29 @@ check network configuration in terminal window on the guest machine.
 In this case the guest machine is reachable using IP : 10.0.2.15/24
 Click "add new port forwarding rule" in virtual machine configuration.
 
+```
 Name : TCPIP Forwarding PuTTy and X11
 Protocol : TCP
 Host IP : 127.0.0.1
 Host Port : 1333
 Guest IP : 10.0.2.15
 Guest Port : 22
+```
 
 #### configure PuTTy to connect to VirtualBox guest machine
 
+```
 Hostname : 127.0.0.1 Port : 1333
 Connection Type : SSH
 X11 : [X] enable X11 forwarding
 x display location : :0.0
 MIT-Magic-Cookie-1
+```
+#### add Oracle User to sudo configuration 
 
+- edit /etc/sudoers file and uncomment
+- %wheel  ALL=(ALL)       ALL
+- afterwards add user oracle to wheel group : usermod -aG wheel oracle
 
 
 
