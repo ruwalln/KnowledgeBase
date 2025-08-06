@@ -86,7 +86,8 @@ MIT-Magic-Cookie-1
 
 #### truncate logfiles and other text based files
 
-- truncate --size=0K <filename> # truncate filename to 0K
+- truncate --size=0K **filename** # truncate filename to 0K
+- or use > **filename** # truncate filename
 
 
 
