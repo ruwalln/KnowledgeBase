@@ -84,6 +84,10 @@ MIT-Magic-Cookie-1
 - passwd -u <user> # unlock user account
 - passwd -e <user> # expire user account
 
+#### truncate logfiles and other text based files
+
+- truncate --size=0K <filename> # truncate filename to 0K
+
 
 
 
