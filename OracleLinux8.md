@@ -77,6 +77,14 @@ MIT-Magic-Cookie-1
 - %wheel  ALL=(ALL)       ALL
 - afterwards add user oracle to wheel group : usermod -aG wheel oracle
 
+#### lock/unlock Users using passwd commands
+
+- in case of locking and unlocking user acconts please use the passwd command (man passwd) for more informations.
+- passwd -l <user> # lock user account
+- passwd -u <user> # unlock user account
+- passwd -e <user> # expire user account
+
+
 
 
 
