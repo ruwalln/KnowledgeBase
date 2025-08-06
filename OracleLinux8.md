@@ -80,9 +80,9 @@ MIT-Magic-Cookie-1
 #### lock/unlock Users using passwd commands
 
 - in case of locking and unlocking user acconts please use the passwd command (man passwd) for more informations.
-- passwd -l <user> # lock user account
-- passwd -u <user> # unlock user account
-- passwd -e <user> # expire user account
+- passwd -l **username** # lock user account
+- passwd -u **username** # unlock user account
+- passwd -e **username** # expire user account
 
 #### truncate logfiles and other text based files
 
