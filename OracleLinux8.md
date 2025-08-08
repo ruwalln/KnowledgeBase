@@ -89,6 +89,22 @@ MIT-Magic-Cookie-1
 - truncate --size=0K **filename** # truncate filename to 0K
 - or use > **filename** # truncate filename
 
+#### Working with Private/Public KeyPairs
+
+1. generate a private/public rsa keypair using Oracle Linux 8
+```
+ssh-keygen -t rsa -N '' -b 2048 -C 'Public and Private KeyPair' -f /root/Dokumente/keys/.ssh/id_rsa
+```
+2. use ssh-copy-id to add the generated public key to "authorized_keys" '/root/.ssh/authorized_keys
+```
+ssh-copy-id -i id_rsa.pub root@oracle8linux1
+```
+3. copy the private-key as a file inside a folder and convert the file to Putty .ppk format using PuttyGen
+use "Load Private Key" and press "Save Private Key" using *.PPK format
+4. Load the session inside Putty and configure in SSH/Auth/Credentials click on "Private Key File" Browse using the converted private keyfile.
+5. Click on "Session" and press "Save" to save configuration to template.
+6. Logon to the Server and enter your username .. and now you are logged in without using a password.
+
 
 
 
