@@ -307,7 +307,7 @@ PL/SQL Reserved Words have special meaning in PL/SQL, and may not be used
 ## HowTo Import a CSV File into a Database Table using SQLCl
 
 - First run SQLCl client and connect to a valid database.
-- Afterwards check the current loadformat using the following command
+- Afterwards check the current loadformat using the following command SHOW LOADFORMAT
 - change the settings using SET LOADFORMAT <param>
 
 ```
