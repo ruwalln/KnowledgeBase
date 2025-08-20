@@ -304,4 +304,43 @@ PL/SQL Reserved Words have special meaning in PL/SQL, and may not be used
 |  DECLARE       |  INTO*        |   OTHERS      |    START*      |    YEAR |
 |  DEFAULT*      |  IS*          |   OUT         |    STDDEV      |    ZONE |
 
- 
+## HowTo Import a CSV File into a Database Table using SQLCl
+
+- First run SQLCl client and connect to a valid database.
+- Afterwards check the current loadformat using the following command
+- change the settings using SET LOADFORMAT <param>
+
+```
+set loadformat csv
+show loadformat
+SQL> show loadformat
+
+csv
+column_names on
+delimiter ,
+enclosures ""
+double off
+encoding UTF8
+row_limit off
+row_terminator default
+skip_rows 0
+skip_after_names
+```
+
+- To change the delimiter in loadformat use the following command
+```
+set loadformat delimited delimiter ;;
+SQL> show loadformat
+
+csv
+column_names on
+delimiter ;
+enclosures ""
+double off
+encoding UTF8
+row_limit off
+row_terminator default
+skip_rows 0
+skip_after_names
+
+```
