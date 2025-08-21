@@ -342,5 +342,65 @@ row_limit off
 row_terminator default
 skip_rows 0
 skip_after_names
+```
 
+- Loading a CSV File Format into a non existing table using the CREATE clause
+```
+load MYDATA C:\users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\bin\mydata.csv CREATE
+```
+
+- Loading CSV Data into the created table MYDATA
+```
+load MYDATA C:\users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\bin\mydata.csv
+```
+## HowTo import a CSV Fileformat into ORACLE using a Powershell Script
+
+- This Script imports a CSV Fileformat into a Oracle Database and modifies a table MYDATA by add a primary key using SQLCL Tools (SQL Developer Command Line)
+```
+# --------------------------------------------------
+# --> start-process using sqlplus using powershell
+# --------------------------------------------------
+
+$db="FREEPDB1"
+$dbuser="ruwalln"
+$dbpass=""
+
+#
+# SQL Query - Construction here
+#
+
+$sqlcmd = '
+set loadformat csv
+set loadformat delimited delimiter ;;
+load MYDATA C:\users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\bin\mydata.csv CREATE
+load MYDATA C:\users\zbook\app\oracle\tools\sqlcl-24.2.0.180.1721\sqlcl\bin\mydata.csv
+alter table MYDATA
+add constraint mydata_pk primary key (ID);
+info mydata'
+
+#
+# ORACLE Database Connection here
+#
+
+$dbConnect = get-credential -UserName $dbuser -Message "Bitte ORACLE User/Passw@$db angeben :" 
+
+$dbpass=$dbConnect.GetNetworkCredential().Password
+$dbuser=$dbconnect.GetNetworkCredential().UserName
+
+#start-process "$sqlcmd | sqlplus $dbuser/$dbpass@$db" -WindowStyle Normal -Wait 
+
+#
+# SQL*Plus execution here
+#
+
+$sqlOutput = $sqlcmd | .\sql -S $dbuser/$dbpass@$db
+
+foreach($line in $sqlOutput) {
+	if($line -match $regex) {
+		
+	   write-host $line
+	}
+}	
+
+#-split $sqlOutput
 ```
