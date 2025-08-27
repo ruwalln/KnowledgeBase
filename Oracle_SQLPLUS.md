@@ -407,3 +407,21 @@ foreach($line in $sqlOutput) {
 
 ## HowTo import a CSV Fileformat into ORACLE using a LINUX Shell Script
 
+```
+#!/bin/bash
+
+db="FREEPDB1"
+dbuser="system"
+dbpass="manager"
+
+SQLCMD="
+set loadformat csv
+load MYPROCESS /home/oracle/process.csv CREATE
+load MYPROCESS /home/oracle/process.csv
+alter table MYPROCESS
+add constraint myprocess_pk primary key (pid);
+"
+
+echo "$SQLCMD" | /home/oracle/sqlcl/bin/sql -S $dbuser/$dbpass@$db
+
+```
