@@ -404,3 +404,6 @@ foreach($line in $sqlOutput) {
 
 #-split $sqlOutput
 ```
+
+## HowTo import a CSV Fileformat into ORACLE using a LINUX Shell Script
+
