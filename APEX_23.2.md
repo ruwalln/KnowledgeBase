@@ -251,7 +251,7 @@ apex.items.P100_TEXTFELD02.setFocus();
 #### Insert User Schemas to ACL (Access Control List)
 
 #### Insert APEX_PUBLIC_USER 
-
+```
 BEGIN
   DBMS_NETWORK_ACL_ADMIN.APPEND_HOST_ACE(
     host => 'api.openai.com',
@@ -265,9 +265,9 @@ BEGIN
   );
 END;
 /
-
+```
 #### Insert Schema User RUWALLN
-
+```
 BEGIN
   DBMS_NETWORK_ACL_ADMIN.APPEND_HOST_ACE(
     host => 'api.openai.com',
@@ -281,9 +281,9 @@ BEGIN
   );
 END;
 /
-
+```
 #### Insert APEX Schema User APEX_240200 
-
+```
 BEGIN
   DBMS_NETWORK_ACL_ADMIN.APPEND_HOST_ACE(
     host => 'api.openai.com',
@@ -297,9 +297,9 @@ BEGIN
   );
 END;
 /
-
+```
 #### Query Result for SQL Statement 
-
+```
 SELECT 
     a.host,
     a.lower_port,
@@ -313,6 +313,7 @@ FROM dba_network_acls a
 JOIN dba_network_acl_privileges p
   ON a.aclid = p.aclid
 WHERE a.host LIKE '%openai%';
+```
 
 api.openai.com	443	443	APEX_PUBLIC_USER	connect	true		
 api.openai.com	443	443	RUWALLN	connect	true		
@@ -320,6 +321,7 @@ api.openai.com	443	443	APEX_240200	connect	true
 
 #### APEX_WEB_SERVICE.MAKE_REST_REQUEST Call using PL/SQL
 
+```
 DECLARE
   l_result CLOB;
 BEGIN
@@ -336,4 +338,4 @@ BEGIN
   dbms_output.put_line(SUBSTR(l_result, 1, 4000));
 END;
 /
-
+```
