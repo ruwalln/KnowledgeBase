@@ -246,3 +246,94 @@ var summe = Number(apex.items.P100_TEXTFELD01.getValue()) + Number(apex.items.P1
 apex.items.P100_TEXTFELD02.setValue(summe);
 apex.items.P100_TEXTFELD02.setFocus();
 ```
+### HowTo use REST Data Sources Request unsing PL/SQL
+
+#### Insert User Schemas to ACL (Access Control List)
+
+#### Insert APEX_PUBLIC_USER 
+
+BEGIN
+  DBMS_NETWORK_ACL_ADMIN.APPEND_HOST_ACE(
+    host => 'api.openai.com',
+    lower_port => 443,
+    upper_port => 443,
+    ace => xs$ace_type(
+      privilege_list => xs$name_list('connect'),
+      principal_name => 'APEX_PUBLIC_USER',
+      principal_type => xs_acl.ptype_db
+    )
+  );
+END;
+/
+
+#### Insert Schema User RUWALLN
+
+BEGIN
+  DBMS_NETWORK_ACL_ADMIN.APPEND_HOST_ACE(
+    host => 'api.openai.com',
+    lower_port => 443,
+    upper_port => 443,
+    ace => xs$ace_type(
+      privilege_list => xs$name_list('connect'),
+      principal_name => 'RUWALLN',
+      principal_type => xs_acl.ptype_db
+    )
+  );
+END;
+/
+
+#### Insert APEX Schema User APEX_240200 
+
+BEGIN
+  DBMS_NETWORK_ACL_ADMIN.APPEND_HOST_ACE(
+    host => 'api.openai.com',
+    lower_port => 443,
+    upper_port => 443,
+    ace => xs$ace_type(
+      privilege_list => xs$name_list('connect'),
+      principal_name => 'APEX_240200',
+      principal_type => xs_acl.ptype_db
+    )
+  );
+END;
+/
+
+#### Query Result for SQL Statement 
+
+SELECT 
+    a.host,
+    a.lower_port,
+    a.upper_port,
+    p.principal,
+    p.privilege,
+    p.is_grant,
+    p.start_date,
+    p.end_date
+FROM dba_network_acls a
+JOIN dba_network_acl_privileges p
+  ON a.aclid = p.aclid
+WHERE a.host LIKE '%openai%';
+
+api.openai.com	443	443	APEX_PUBLIC_USER	connect	true		
+api.openai.com	443	443	RUWALLN	connect	true		
+api.openai.com	443	443	APEX_240200	connect	true		
+
+#### APEX_WEB_SERVICE.MAKE_REST_REQUEST Call using PL/SQL
+
+DECLARE
+  l_result CLOB;
+BEGIN
+  -- Header setzen
+  APEX_WEB_SERVICE.g_request_headers(1).name := 'Authorization';
+  APEX_WEB_SERVICE.g_request_headers(1).value := 'Bearer sk-proj-YOUR-KEY';
+
+  -- REST-Aufruf
+  l_result := APEX_WEB_SERVICE.MAKE_REST_REQUEST(
+    p_url         => 'https://api.openai.com/v1/models',
+    p_http_method => 'GET'
+  );
+
+  dbms_output.put_line(SUBSTR(l_result, 1, 4000));
+END;
+/
+
