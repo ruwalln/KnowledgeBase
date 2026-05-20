@@ -335,6 +335,27 @@ Anweisung verarbeitet
 
 
 
+## SQL Statements - working on multible tables
+
+### Update Table from multible tables
+
+To UPDATE a column in a table using a join with an other table column please use the following statement.
+
+```
+--UPDATE table1
+--   SET table1.value = table2.CODE
+--  FROM table2
+-- WHERE table1.value = table2.DESC
+--   AND table1.UPDATETYPE='blah';
+
+
+update youtube_videos
+set youtube_videos.youtube_thump = thump_images.thump_url
+from thump_images
+where youtube_videos.youtube_guid = thump_images.thump_guid
+and youtube_videos.video_style = 'Jazz Guitar Shorts' 
+
+```
 
 ## Scripts Section - Using Dynamic Performance View
 
